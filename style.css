@@ -253,18 +253,18 @@ background-color:#EBDDE2;
 }
 
 #Fsharp_Major {
-  -moz-transform:rotate(165deg);
-   -webkit-transform:rotate(165deg);
-   -o-transform:rotate(165deg);
-   transform:rotate(165deg);
+	-moz-transform:rotate(165deg);
+  -webkit-transform:rotate(165deg);
+  -o-transform:rotate(165deg);
+  transform:rotate(165deg);
 }
 #Fsharp_Major .pie {
-   color:blue;
-   -moz-transform:rotate(30deg);
-   -webkit-transform:rotate(30deg);
-   -o-transform:rotate(30deg);
-   transform:rotate(30deg);
-background-color:white;
+	color:blue;
+  -moz-transform:rotate(30deg);
+  -webkit-transform:rotate(30deg);
+  -o-transform:rotate(30deg);
+  transform:rotate(30deg);
+	background-color:white;
 }
 
 #Csharp_Major {
