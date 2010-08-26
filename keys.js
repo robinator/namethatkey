@@ -164,30 +164,34 @@ function namethatkey() {
 	
 	// Circle of Fifth Highlighting
 	
-	// Remove all selected_slice/selected_slice_minor classes to reset
+	// Remove all selected_slice/selected_slice_minor/selected_key_text classes to reset
 	$('.selected_slice').removeClass('selected_slice');
 	$('.selected_slice_minor').removeClass('selected_slice_minor');
+	$('.selected_key_text').removeClass('selected_key_text');
 
-
-	// Give the resulting *Major ids .selected_slice
+	// Give the resulting Major ids .selected_slice
 	_(topkeys).each(function(item,index) {
-
-	var id = item.replace(" ", "_").replace("#", "sharp");
-	$('#'+id+' .pie').addClass('selected_slice');
-
+		var id = item.replace(" ", "_").replace("#", "sharp");
+		$('#'+id+' .pie').addClass('selected_slice');
 	});
 	
-	// Give the resulting *Minor ids .selected_slice_minor
+	// Give the resulting Minor ids .selected_slice_minor
 	_(topkeys).each(function(item,index) {
-
-	var id = item.replace(" ", "_").replace("#", "sharp");
-	$('#'+id+' .pie_minor').addClass('selected_slice_minor');
-
+		var id = item.replace(" ", "_").replace("#", "sharp");
+		$('#'+id+' .pie_minor').addClass('selected_slice_minor');
 	});
 	
-	// Remove all selected_slice / selected_slice_minor if nothing is selected
+	// Highlight circle labels by adding .selected_key_text
+	_(topkeys).each(function(item,index) {
+		var id = item.replace(" ", "_").replace("#", "sharp");
+		id = id+'-label';
+		$('#'+id).addClass('selected_key_text');
+	});
+	
+	// Remove all selected_slice/selected_slice_minor/selected_key_text classes if nothing is selected
 	if ($('#chord_selector td.selected').length == 0) {
-	$('.selected_slice').removeClass('selected_slice');
-	$('.selected_slice_minor').removeClass('selected_slice_minor');
-	}
+		$('.selected_slice').removeClass('selected_slice');
+		$('.selected_slice_minor').removeClass('selected_slice_minor');
+		$('.selected_key_text').removeClass('selected_key_text');
+		}
 }
