@@ -346,9 +346,9 @@ background-color:#EBDDE2;
 /* Smaller minor pie*/
 
 #minor_pie {
-position:absolute;
-left:62px;
-top:62px;
+	position:absolute;
+	left:62px;
+	top:62px;
 }
 
 .pie_minor {
@@ -551,156 +551,160 @@ background-color:white;
 
 
 /* Major labels */
-#Cmaj {
-position:absolute;
-top:25px;
-left:240px;
+#C_Major-label {
+	position:absolute;
+	top:25px;
+	left:240px;
 }
 
-#Gmaj {
-position:absolute;
-top:50px;
-left:350px;
+#G_Major-label {
+	position:absolute;
+	top:50px;
+	left:350px;
 }
 
-#Dmaj {
-position:absolute;
-top:130px;
-left:430px;
+#D_Major-label {
+	position:absolute;
+	top:130px;
+	left:430px;
 }
 
-#Amaj {
-position:absolute;
-top:240px;
-left:460px;
+#A_Major-label {
+	position:absolute;
+	top:240px;
+	left:460px;
 }
 
-#Emaj {
-position:absolute;
-top:350px;
-left:430px;
+#E_Major-label {
+	position:absolute;
+	top:350px;
+	left:430px;
 }
 
-#Bmaj {
-position:absolute;
-top:430px;
-left:353px;
+#B_Major-label {
+	position:absolute;
+	top:430px;
+	left:353px;
 }
 
-#Fsharpmaj {
-position:absolute;
-top:455px;
-left:243px;
+#Fsharp_Major-label {
+	position:absolute;
+	top:455px;
+	left:243px;
 }
 
-#Csharpmaj {
-position:absolute;
-top:430px;
-left:135px;
+#Csharp_Major-label {
+	position:absolute;
+	top:430px;
+	left:135px;
 }
 
-#Aflatmaj {
-position:absolute;
-top:350px;
-left:52px;
+#Ab_Major-label {
+	position:absolute;
+	top:350px;
+	left:52px;
 }
 
-#Eflatmaj {
-position:absolute;
-top:245px;
-left:15px;
+#Eb_Major-label {
+	position:absolute;
+	top:245px;
+	left:15px;
 }
 
-#Bflatmaj {
-position:absolute;
-top:135px;
-left:45px;
+#Bb_Major-label {
+	position:absolute;
+	top:135px;
+	left:45px;
 }
 
-#Fmaj {
-position:absolute;
-top:50px;
-left:130px;
+#F_Major-label {
+	position:absolute;
+	top:50px;
+	left:130px;
 }
 
 /* Minor labels */
-#Cm {
-position:absolute;
-top:240px;
-left:73px;
+#C_Minor-label {
+	position:absolute;
+	top:240px;
+	left:73px;
 }
 
-#Gm {
-position:absolute;
-top:160px;
-left:95px;
+#G_Minor-label {
+	position:absolute;
+	top:160px;
+	left:95px;
 }
 
-#Dm {
-position:absolute;
-top:95px;
-left:150px;
+#D_Minor-label {
+	position:absolute;
+	top:95px;
+	left:150px;
 }
 
-#Am {
-position:absolute;
-top:80px;
-left:234px;
+#A_Minor-label {
+	position:absolute;
+	top:80px;
+	left:234px;
 }
 
-#Em {
-position:absolute;
-top:95px;
-left:315px;
+#E_Minor-label {
+	position:absolute;
+	top:95px;
+	left:315px;
 }
 
-#Bm {
-position:absolute;
-top:160px;
-left:370px;
+#B_Minor-label {
+	position:absolute;
+	top:160px;
+	left:370px;
 }
 
-#Fsharpm {
-position:absolute;
-top:240px;
-left:385px;
+#Fsharp_Minor-label {
+	position:absolute;
+	top:240px;
+	left:385px;
 }
 
-#Csharpm {
-position:absolute;
-top:315px;
-left:365px;
+#Csharp_Minor-label {
+	position:absolute;
+	top:315px;
+	left:365px;
 }
 
-#Aflatm {
-position:absolute;
-top:380px;
-left:315px;
+#Ab_Minor-label {
+	position:absolute;
+	top:380px;
+	left:315px;
 }
 
-#Eflatm {
-position:absolute;
-top:405px;
-left:233px;
+#Eb_Minor-label {
+	position:absolute;
+	top:405px;
+	left:233px;
 }
 
-#Bflatm {
-position:absolute;
-top:380px;
-left:150px;
+#Bb_Minor-label {
+	position:absolute;
+	top:380px;
+	left:150px;
 }
 
-#Fm {
-position:absolute;
-top:325px;
-left:97px;
+#F_Minor-label {
+	position:absolute;
+	top:325px;
+	left:97px;
 }
 
 /* The selected slices */
 .selected_slice {
-background-color:green !important;
+	background-color:green !important;
 }
 
 .selected_slice_minor {
-background-color:#2DCD87 !important;
+	background-color:#2DCD87 !important;
+}
+
+.selected_key_text {
+	color:white;
 }
