@@ -168,6 +168,7 @@ margin-right:auto;
 
 #C_Major {
 -moz-transform:rotate(-15deg);
+-webkit-transform:rotate(-15deg);
     
 }
 #C_Major .pie {
@@ -371,6 +372,8 @@ top:62px;
 
 #A_Minor {
 	-moz-transform:rotate(-15deg);
+        -webkit-transform:rotate(-15deg);
+
     
 }
 #A_Minor .pie_minor {
