@@ -68,6 +68,11 @@ a#toggle_instr:hover {
 	padding: 5px 5px 5px 5px;
 }
 
+td {
+	width:80px;
+	text-align:center;
+}
+
 #chord_selector td {
 	cursor:pointer;
 	padding:5px;
