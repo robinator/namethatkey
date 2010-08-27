@@ -130,7 +130,15 @@ a#clear_selected:hover {
 	margin: 0px 0px 0px 0px;
 	padding: 5px;
 	clear:both;
-
+}
+#footer .validations {
+	font-size: 13px;
+}
+#footer .validations a {
+	color: #aaa;
+	font-family: Helvetica;
+	font-size: 0.8em;
+	padding: 0 0.8em;
 }
 
 /* Circle of Fifth Goodies */
@@ -142,12 +150,7 @@ margin-left:auto;
 margin-right:auto;
 }
 
-
-
 /* Large major pie */
-
-
-
 .pie {
 	position:absolute;
 	width:500px;
