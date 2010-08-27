@@ -68,17 +68,14 @@ a#toggle_instr:hover {
 	padding: 5px 5px 5px 5px;
 }
 
-td {
-	width:80px;
-	text-align:center;
-}
-
 #chord_selector td {
 	cursor:pointer;
 	padding:5px;
 	margin:3px;
 	-moz-border-radius: 3px;
 	border-top: 1px solid black;
+	width:80px;
+	text-align:center;
 }
 
 .highlight:hover {
