@@ -134,7 +134,15 @@ a#clear_selected:hover {
 	margin: 0px 0px 0px 0px;
 	padding: 5px;
 	clear:both;
-
+}
+#footer .validations {
+	font-size: 13px;
+}
+#footer .validations a {
+	color: #aaa;
+	font-family: Helvetica;
+	font-size: 0.8em;
+	padding: 0 0.8em;
 }
 
 /* Circle of Fifth Goodies */
@@ -146,12 +154,7 @@ margin-left:auto;
 margin-right:auto;
 }
 
-
-
 /* Large major pie */
-
-
-
 .pie {
 	position:absolute;
 	width:500px;
@@ -420,25 +423,25 @@ background-color:white;
 }
 
 #Fsharp_Minor {
-  -moz-transform:rotate(75deg);
-   -webkit-transform:rotate(75deg);
-   -o-transform:rotate(75deg);
-   transform:rotate(75deg);
+	-moz-transform:rotate(75deg);
+	-webkit-transform:rotate(75deg);
+	-o-transform:rotate(75deg);
+	transform:rotate(75deg);
 }
 #Fsharp_Minor .pie_minor {
-   color:blue;
-   -moz-transform:rotate(30deg);
-   -webkit-transform:rotate(30deg);
-   -o-transform:rotate(30deg);
-   transform:rotate(30deg);
-background-color:white;
+	color:blue;
+	-moz-transform:rotate(30deg);
+	-webkit-transform:rotate(30deg);
+	-o-transform:rotate(30deg);
+	transform:rotate(30deg);
+	background-color:white;
 }
 
 #Csharp_Minor {
-  -moz-transform:rotate(105deg);
-   -webkit-transform:rotate(105deg);
-   -o-transform:rotate(105deg);
-   transform:rotate(105deg);
+	-moz-transform:rotate(105deg);
+	-webkit-transform:rotate(105deg);
+	-o-transform:rotate(105deg);
+	transform:rotate(105deg);
 }
 #Csharp_Minor .pie_minor {
    color:blue;
