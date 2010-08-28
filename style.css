@@ -92,10 +92,6 @@ a#toggle_instr:hover {
 	background-color:green;
 }
 
-tr.odd {
-	background-color:#D4D8B0;
-}
-
 a#clear_selected {
 	border:2px solid black;
 	background-color:yellow;

@@ -1,15 +1,8 @@
 <!DOCTYPE HTML>
 <html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
-<<<<<<< HEAD
-
-<head>
-	<title>Name That Key - Find a Song's Key by It's Chords</title>
-        <meta charset="utf-8" />
-=======
 <head>
 	<title>Name That Key - Find a Song's Key by It's Chords</title>
   <meta charset="utf-8" />
->>>>>>> upstream/master
 	<meta name="copyright" content="Garrett Grimm &amp; Rob Law, 2010" />
 	<meta name="keywords" content="find a song key by chords, figure out a keys, music, chords, guitar, piano, find key online tool" />
 	<meta name="description" content="Automatically get the key to a song by its chords." />
@@ -17,99 +10,10 @@
 	<link rel="shortcut icon" href="../favicon.ico" />
 
 	<link href="style.css" media="all" rel="stylesheet" type="text/css"/>
-<<<<<<< HEAD
-	<script src="http://documentcloud.github.com/underscore/underscore-min.js" type="text/javascript"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
-	<script src="keys.js" type="text/javascript"></script>
-	
-	<script type="text/javascript">
-		// Setup events after dom is loaded
-		$(document).ready(function() {
-
-			//  jquery slider toggle for #instructions
-			$('#toggle_instr').click(function() {
-				$('#instructions').slideToggle('medium', function() { });
-			});
-
-			//  add .even to highlight every other table row
-			$('#chord_selector tr:odd').addClass('odd');
-			
-			//  apply .highlight to each of the td
-			$('#chord_selector td').addClass('highlight');
-
-			//  toggle when clicked to .selected and add a unique chord count id - ONLY ALLOW 5
-			$('#chord_selector td').click(function () {
-				if ($(this).hasClass('selected')) {
-					$(this).removeClass('selected');
-					$(this).removeAttr('id');
-				}
-
-				else {
-					if($('#chord_selector td.selected').length < 5) {
-						if($('#chord_count0').length == 0) {
-							$(this).addClass('selected');
-							$(this).attr('id','chord_count0');
-						}
-						else if($('#chord_count1').length == 0) {
-							$(this).addClass('selected');
-							$(this).attr('id','chord_count1');
-						}
-						else if($('#chord_count2').length == 0) {
-							$(this).addClass('selected');
-							$(this).attr('id','chord_count2');
-						}
-						else if($('#chord_count3').length == 0) {
-							$(this).addClass('selected');
-							$(this).attr('id','chord_count3');
-						}
-						else if($('#chord_count4').length == 0) {
-							$(this).addClass('selected');
-							$(this).attr('id','chord_count4');
-						}
-					}
-				}
-				namethatkey();		
-			});
-
-			//  click to remove .selected &amp; ids from chord table (clears selections)
-			$('#clear_selected').click(function() {
-				$('#chord_selector td').removeClass('selected');
-				$('#chord_selector td').removeAttr('id');
-				namethatkey();
-			});
-		});
-	</script>
-
-	<!--Digg Script-->
-	<script type="text/javascript">
-	(function() {
-	var s = document.createElement('SCRIPT'), s1 = document.getElementsByTagName('SCRIPT')[0];
-	s.type = 'text/javascript';
-	s.async = true;
-	s.src = 'http://widgets.digg.com/buttons.js';
-	s1.parentNode.insertBefore(s, s1);
-	})();
-	</script>
-
-	<!-- google analytics -->
-	<script type="text/javascript">
-
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-1454657-14']);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-	</script>
-=======
 	<script src="scripts/underscore.min.js" type="text/javascript"></script>
 	<script src="scripts/jquery.min.js" type="text/javascript"></script>
 	<script src="scripts/keys.js" type="text/javascript"></script>
 	<script src="scripts/app.js" type="text/javascript"></script>	
->>>>>>> upstream/master
 </head>
 <body>
 	<div id="wrapper">
@@ -272,11 +176,6 @@
 			</div>
 		</div>
 		<div id="footer">
-<<<<<<< HEAD
-			<p>&copy; 2010 <a href="http://www.grimmdude.com/">Garrett Grimm</a> &amp; <a href="http://robinator.github.com/">Rob Law</a> &amp;
-				<small><a href="http://livearevolution.com/">Fady Awada</a></small>
-</p>
-=======
 			<p>&copy; 2010 
 				<a href="http://www.grimmdude.com/">Garrett Grimm</a>,
 				<a href="http://robinator.github.com/">Rob Law</a>, and
@@ -286,7 +185,6 @@
 				<a href="http://validator.w3.org/check/referer">HTML5</a>
 	      <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS3</a>
 			</p>
->>>>>>> upstream/master
 		</div>
 	</div><!--/wrapper-->
 	<!--Digg Script-->
