@@ -1,715 +1,480 @@
+ 
 body {
-	font-family:helvetica;
+font-family:helvetica;
 }
-
 img {
-	border:none;
+border:medium none;
 }
-
 #wrapper {
-	position:relative;
-	width:100%;
-	margin: -8px 0px 0px -8px;
+margin:-8px 0 0 -8px;
+position:relative;
+width:100%;
 }
-
 a {
-	text-decoration:none;
+text-decoration:none;
 }
-
 #header {
-	background-color:#264a6f;
-	width:100%;
-	padding:5px 5px 5px 5px;
-	margin: 0px 0px 0px 0px;
-	border: none;
+background-color:#264A6F;
+border:medium none;
+margin:0;
+padding:8px;
+width:100%;
 }
-
 #header h1 {
-	color:white;
+color:#FFFFFF;
 }
-
 a#toggle_instr {
-	background-color: #EF7A51;
-	padding: 3px 5px 3px 5px;
-	margin: 2px 2px 2px 2px;
-	-moz-border-radius: 15%;
-	-webkit-border-radius: 15%;
-	border-radius: 15%;
-	border: 2px solid #5F1F09;
-	color:white;
-	width:80px;
-	text-align:center;
+-moz-border-radius:8px 8px 8px 8px;
+background-color:#264A6F;
+border:2px solid #777777;
+color:#FFFFFF;
+margin:2px;
+padding:3px 5px;
+text-align:center;
+width:80px;
 }
-
 a#toggle_instr:hover {
-	border-color:white;
-	border-width:2px;
+border-color:white;
+border-width:2px;
 }
-
 #social {
-	position:absolute;
-	top:40px;
-	right:10px;
+position:absolute;
+right:10px;
+top:40px;
 }
-
 #instructions {
-	display: none;
-	width:100%;
-	padding:5px 5px 5px 5px;
-	line-height: 22px;
+background-color:#A6B35D;
+display:none;
+line-height:22px;
+padding:8px;
+width:100%;
 }
-
 #enterchords {
-	float:left;
-	background-color:#E5E2B9;
-	border:1px solid #C8C36E;
-	width:49%;
-	height:750px;
-	padding: 5px 5px 5px 5px;
+background-color:#EEEEEE;
+border:1px solid #DDDDDD;
+float:left;
+height:750px;
+padding:5px;
+width:49%;
 }
-
 #chord_selector td {
-	cursor:pointer;
-	padding:5px;
-	margin:3px;
-	-moz-border-radius: 3px;
-	border-top: 1px solid black;
-	width:80px;
-	text-align:center;
+-moz-border-radius:3px 3px 3px 3px;
+border-top:1px solid black;
+cursor:pointer;
+margin:3px;
+padding:5px;
+text-align:center;
+width:80px;
 }
-
 .highlight:hover {
-	background-color:red;
-	color:white;
+background-color:red;
+color:white;
 }
-
 .selected {
-	background-color:green;
-	color:white;
+background-color:green;
+color:white;
 }
-
 .selected:hover {
-	background-color:green;
+background-color:green;
 }
-
 a#clear_selected {
-	border:2px solid black;
-	background-color:yellow;
-	padding:3px;
-	color:black;
+-moz-border-radius:8px 8px 8px 8px;
+background-color:#264A6F;
+border:2px solid #FFFFFF;
+color:#FFFFFF;
+padding:3px;
 }
-
 a#clear_selected:hover {
-	border:2px solid white;
+border:2px solid #777777;
 }
-
 #result {
-	float:left;
-	width:49%;
-	height:750px;
-	background-color:#A6B35D;
-	padding: 5px 5px 5px 5px;
-	border:1px solid #7D8840;
-	display:block;
-	position:relative;
+background-color:#FFFFFF;
+display:block;
+float:left;
+height:750px;
+padding:8px;
+position:relative;
+width:49%;
 }
-
 #keyletter {
-	font-size: 70px;
-	text-align: center;
-	margin:10px;
-
+font-size:70px;
+margin:10px;
+text-align:center;
 }
-
 .or {
-	font-size: 30px;
+font-size:30px;
 }
-
 #footer {
-	border-top: 3px solid #554857;
-	margin: 0px 0px 0px 0px;
-	padding: 5px;
-	clear:both;
+border-top:3px solid #DDDDDD;
+clear:both;
+margin:0;
+padding:5px;
 }
 #footer .validations {
-	font-size: 13px;
+font-size:13px;
 }
 #footer .validations a {
-	color: #aaa;
-	font-family: Helvetica;
-	font-size: 0.8em;
-	padding: 0 0.8em;
+color:#AAAAAA;
+font-family:Helvetica;
+font-size:0.8em;
+padding:0 0.8em;
 }
-
-/* Circle of Fifth Goodies */
 #circle_of_fifths {
-position:relative;
 font-size:20px;
-width:550px;
 margin-left:auto;
 margin-right:auto;
+position:relative;
+width:550px;
 }
-
-/* Large major pie */
 .pie {
-	position:absolute;
-	width:500px;
-	height:500px;
-	clip:rect(0px,250px,500px,0px);
-	-moz-border-radius:250px;
-	-webkit-border-radius:250px;
-	border-radius:250px;
-
+-moz-border-radius:250px 250px 250px 250px;
+clip:rect(0px, 250px, 500px, 0px);
+height:500px;
+position:absolute;
+width:500px;
 }
-
 .hold {
-	position:absolute;
-	width:500px;
-	height:500px;
-	clip:rect(0px,500px,500px,250px);
-
+clip:rect(0px, 500px, 500px, 250px);
+height:500px;
+position:absolute;
+width:500px;
 }
-
-
 #C_Major {
 -moz-transform:rotate(-15deg);
--webkit-transform:rotate(-15deg);
-    
 }
 #C_Major .pie {
-   color:red;
-   -moz-transform:rotate(30deg);
-   -webkit-transform:rotate(30deg);
-   -o-transform:rotate(30deg);
-   transform:rotate(30deg);
+-moz-transform:rotate(30deg);
 background-color:white;
+color:red;
 }
 #D_Major {
-  -moz-transform:rotate(45deg);
-   -webkit-transform:rotate(45deg);
-   -o-transform:rotate(45deg);
-   transform:rotate(45deg);
+-moz-transform:rotate(45deg);
 }
 #D_Major .pie {
-   color:green;
-   -moz-transform:rotate(30deg);
-   -webkit-transform:rotate(30deg);
-   -o-transform:rotate(30deg);
-   transform:rotate(30deg);
+-moz-transform:rotate(30deg);
 background-color:white;
+color:green;
 }
 #G_Major {
-  -moz-transform:rotate(15deg);
-   -webkit-transform:rotate(15deg);
-   -o-transform:rotate(15deg);
-   transform:rotate(15deg);
+-moz-transform:rotate(15deg);
 }
 #G_Major .pie {
-   color:blue;
-   -moz-transform:rotate(30deg);
-   -webkit-transform:rotate(30deg);
-   -o-transform:rotate(30deg);
-   transform:rotate(30deg);
-background-color:#EBDDE2;
+-moz-transform:rotate(30deg);
+background-color:#dddddd;
+color:blue;
 }
-
 #A_Major {
-  -moz-transform:rotate(75deg);
-   -webkit-transform:rotate(75deg);
-   -o-transform:rotate(75deg);
-   transform:rotate(75deg);
+-moz-transform:rotate(75deg);
 }
 #A_Major .pie {
-   color:blue;
-   -moz-transform:rotate(30deg);
-   -webkit-transform:rotate(30deg);
-   -o-transform:rotate(30deg);
-   transform:rotate(30deg);
-background-color:#EBDDE2;
+-moz-transform:rotate(30deg);
+background-color:#dddddd;
+color:blue;
 }
-
 #E_Major {
-  -moz-transform:rotate(105deg);
-   -webkit-transform:rotate(105deg);
-   -o-transform:rotate(105deg);
-   transform:rotate(105deg);
+-moz-transform:rotate(105deg);
 }
 #E_Major .pie {
-   color:blue;
-   -moz-transform:rotate(30deg);
-   -webkit-transform:rotate(30deg);
-   -o-transform:rotate(30deg);
-   transform:rotate(30deg);
+-moz-transform:rotate(30deg);
 background-color:white;
+color:blue;
 }
-
 #B_Major {
-  -moz-transform:rotate(135deg);
-   -webkit-transform:rotate(135deg);
-   -o-transform:rotate(135deg);
-   transform:rotate(135deg);
+-moz-transform:rotate(135deg);
 }
 #B_Major .pie {
-   color:blue;
-   -moz-transform:rotate(30deg);
-   -webkit-transform:rotate(30deg);
-   -o-transform:rotate(30deg);
-   transform:rotate(30deg);
-background-color:#EBDDE2;
+-moz-transform:rotate(30deg);
+background-color:#dddddd;
+color:blue;
 }
-
 #Fsharp_Major {
-	-moz-transform:rotate(165deg);
-  -webkit-transform:rotate(165deg);
-  -o-transform:rotate(165deg);
-  transform:rotate(165deg);
+-moz-transform:rotate(165deg);
 }
 #Fsharp_Major .pie {
-	color:blue;
-  -moz-transform:rotate(30deg);
-  -webkit-transform:rotate(30deg);
-  -o-transform:rotate(30deg);
-  transform:rotate(30deg);
-	background-color:white;
+-moz-transform:rotate(30deg);
+background-color:white;
+color:blue;
 }
-
 #Csharp_Major {
-  -moz-transform:rotate(195deg);
-   -webkit-transform:rotate(195deg);
-   -o-transform:rotate(195deg);
-   transform:rotate(195deg);
+-moz-transform:rotate(195deg);
 }
 #Csharp_Major .pie {
-   color:blue;
-   -moz-transform:rotate(30deg);
-   -webkit-transform:rotate(30deg);
-   -o-transform:rotate(30deg);
-   transform:rotate(30deg);
-background-color:#EBDDE2;
+-moz-transform:rotate(30deg);
+background-color:#dddddd;
+color:blue;
 }
-
 #Ab_Major {
-  -moz-transform:rotate(225deg);
-   -webkit-transform:rotate(225deg);
-   -o-transform:rotate(225deg);
-   transform:rotate(225deg);
+-moz-transform:rotate(225deg);
 }
 #Ab_Major .pie {
-   color:blue;
-   -moz-transform:rotate(30deg);
-   -webkit-transform:rotate(30deg);
-   -o-transform:rotate(30deg);
-   transform:rotate(30deg);
+-moz-transform:rotate(30deg);
 background-color:white;
+color:blue;
 }
-
 #Eb_Major {
-  -moz-transform:rotate(255deg);
-   -webkit-transform:rotate(255deg);
-   -o-transform:rotate(255deg);
-   transform:rotate(255deg);
+-moz-transform:rotate(255deg);
 }
 #Eb_Major .pie {
-   color:blue;
-   -moz-transform:rotate(30deg);
-   -webkit-transform:rotate(30deg);
-   -o-transform:rotate(30deg);
-   transform:rotate(30deg);
-background-color:#EBDDE2;
+-moz-transform:rotate(30deg);
+background-color:#dddddd;
+color:blue;
 }
-
 #Bb_Major {
-  -moz-transform:rotate(285deg);
-   -webkit-transform:rotate(285deg);
-   -o-transform:rotate(285deg);
-   transform:rotate(285deg);
+-moz-transform:rotate(285deg);
 }
 #Bb_Major .pie {
-   color:blue;
-   -moz-transform:rotate(30deg);
-   -webkit-transform:rotate(30deg);
-   -o-transform:rotate(30deg);
-   transform:rotate(30deg);
+-moz-transform:rotate(30deg);
 background-color:white;
+color:blue;
 }
-
 #F_Major {
-  -moz-transform:rotate(315deg);
-   -webkit-transform:rotate(315deg);
-   -o-transform:rotate(315deg);
-   transform:rotate(315deg);
+-moz-transform:rotate(315deg);
 }
 #F_Major .pie {
-   color:blue;
-   -moz-transform:rotate(30deg);
-   -webkit-transform:rotate(30deg);
-   -o-transform:rotate(30deg);
-   transform:rotate(30deg);
-background-color:#EBDDE2;
+-moz-transform:rotate(30deg);
+background-color:#dddddd;
+color:blue;
 }
-
-/* Smaller minor pie*/
-
 #minor_pie {
-	position:absolute;
-	left:62px;
-	top:62px;
+left:62px;
+position:absolute;
+top:62px;
 }
-
 .pie_minor {
-	position:absolute;
-	width:375px;
-	height:375px;
-	clip:rect(0px,187.5px,375px,0px);
-	-moz-border-radius:187.5px;
-	-webkit-border-radius:187.5px;
-	border-radius:187.5px;
-
+-moz-border-radius:187.5px 187.5px 187.5px 187.5px;
+clip:rect(0px, 187.5px, 375px, 0px);
+height:375px;
+position:absolute;
+width:375px;
 }
-
 .hold_minor {
-	position:absolute;
-	width:375px;
-	height:375px;
-	clip:rect(0px,375px,375px,187.5px);
-
+clip:rect(0px, 375px, 375px, 187.5px);
+height:375px;
+position:absolute;
+width:375px;
 }
-
 #A_Minor {
-	-moz-transform:rotate(-15deg);
-        -webkit-transform:rotate(-15deg);
-
-    
+-moz-transform:rotate(-15deg);
 }
 #A_Minor .pie_minor {
-   color:red;
-   -moz-transform:rotate(30deg);
-   -webkit-transform:rotate(30deg);
-   -o-transform:rotate(30deg);
-   transform:rotate(30deg);
-background-color:#EBDDE2;
+-moz-transform:rotate(30deg);
+background-color:#dddddd;
+color:red;
 }
 #B_Minor {
-  -moz-transform:rotate(45deg);
-   -webkit-transform:rotate(45deg);
-   -o-transform:rotate(45deg);
-   transform:rotate(45deg);
+-moz-transform:rotate(45deg);
 }
 #B_Minor .pie_minor {
-   color:green;
-   -moz-transform:rotate(30deg);
-   -webkit-transform:rotate(30deg);
-   -o-transform:rotate(30deg);
-   transform:rotate(30deg);
-background-color:#EBDDE2;
+-moz-transform:rotate(30deg);
+background-color:#dddddd;
+color:green;
 }
 #E_Minor {
-  -moz-transform:rotate(15deg);
-   -webkit-transform:rotate(15deg);
-   -o-transform:rotate(15deg);
-   transform:rotate(15deg);
+-moz-transform:rotate(15deg);
 }
 #E_Minor .pie_minor {
-   color:blue;
-   -moz-transform:rotate(30deg);
-   -webkit-transform:rotate(30deg);
-   -o-transform:rotate(30deg);
-   transform:rotate(30deg);
+-moz-transform:rotate(30deg);
 background-color:white;
+color:blue;
 }
-
 #Fsharp_Minor {
-  -moz-transform:rotate(75deg);
-   -webkit-transform:rotate(75deg);
-   -o-transform:rotate(75deg);
-   transform:rotate(75deg);
+-moz-transform:rotate(75deg);
 }
 #Fsharp_Minor .pie_minor {
-   color:blue;
-   -moz-transform:rotate(30deg);
-   -webkit-transform:rotate(30deg);
-   -o-transform:rotate(30deg);
-   transform:rotate(30deg);
+-moz-transform:rotate(30deg);
 background-color:white;
+color:blue;
 }
-
 #Csharp_Minor {
-  -moz-transform:rotate(105deg);
-   -webkit-transform:rotate(105deg);
-   -o-transform:rotate(105deg);
-   transform:rotate(105deg);
+-moz-transform:rotate(105deg);
 }
 #Csharp_Minor .pie_minor {
-   color:blue;
-   -moz-transform:rotate(30deg);
-   -webkit-transform:rotate(30deg);
-   -o-transform:rotate(30deg);
-   transform:rotate(30deg);
-background-color:#EBDDE2;
+-moz-transform:rotate(30deg);
+background-color:#dddddd;
+color:blue;
 }
-
 #Ab_Minor {
-  -moz-transform:rotate(135deg);
-   -webkit-transform:rotate(135deg);
-   -o-transform:rotate(135deg);
-   transform:rotate(135deg);
+-moz-transform:rotate(135deg);
 }
 #Ab_Minor .pie_minor {
-   color:blue;
-   -moz-transform:rotate(30deg);
-   -webkit-transform:rotate(30deg);
-   -o-transform:rotate(30deg);
-   transform:rotate(30deg);
+-moz-transform:rotate(30deg);
 background-color:white;
+color:blue;
 }
-
 #Eb_Minor {
-  -moz-transform:rotate(165deg);
-   -webkit-transform:rotate(165deg);
-   -o-transform:rotate(165deg);
-   transform:rotate(165deg);
+-moz-transform:rotate(165deg);
 }
 #Eb_Minor .pie_minor {
-   color:blue;
-   -moz-transform:rotate(30deg);
-   -webkit-transform:rotate(30deg);
-   -o-transform:rotate(30deg);
-   transform:rotate(30deg);
-background-color:#EBDDE2;
+-moz-transform:rotate(30deg);
+background-color:#dddddd;
+color:blue;
 }
-
 #Bb_Minor {
-  -moz-transform:rotate(195deg);
-   -webkit-transform:rotate(195deg);
-   -o-transform:rotate(195deg);
-   transform:rotate(195deg);
+-moz-transform:rotate(195deg);
 }
 #Bb_Minor .pie_minor {
-   color:blue;
-   -moz-transform:rotate(30deg);
-   -webkit-transform:rotate(30deg);
-   -o-transform:rotate(30deg);
-   transform:rotate(30deg);
+-moz-transform:rotate(30deg);
 background-color:white;
+color:blue;
 }
-
 #F_Minor {
-  -moz-transform:rotate(225deg);
-   -webkit-transform:rotate(225deg);
-   -o-transform:rotate(225deg);
-   transform:rotate(225deg);
+-moz-transform:rotate(225deg);
 }
 #F_Minor .pie_minor {
-   color:blue;
-   -moz-transform:rotate(30deg);
-   -webkit-transform:rotate(30deg);
-   -o-transform:rotate(30deg);
-   transform:rotate(30deg);
-background-color:#EBDDE2;
+-moz-transform:rotate(30deg);
+background-color:#dddddd;
+color:blue;
 }
-
 #C_Minor {
-  -moz-transform:rotate(255deg);
-   -webkit-transform:rotate(255deg);
-   -o-transform:rotate(255deg);
-   transform:rotate(255deg);
+-moz-transform:rotate(255deg);
 }
 #C_Minor .pie_minor {
-   color:blue;
-   -moz-transform:rotate(30deg);
-   -webkit-transform:rotate(30deg);
-   -o-transform:rotate(30deg);
-   transform:rotate(30deg);
+-moz-transform:rotate(30deg);
 background-color:white;
+color:blue;
 }
-
 #G_Minor {
-  -moz-transform:rotate(285deg);
-   -webkit-transform:rotate(285deg);
-   -o-transform:rotate(285deg);
-   transform:rotate(285deg);
+-moz-transform:rotate(285deg);
 }
 #G_Minor .pie_minor {
-   color:blue;
-   -moz-transform:rotate(30deg);
-   -webkit-transform:rotate(30deg);
-   -o-transform:rotate(30deg);
-   transform:rotate(30deg);
-background-color:#EBDDE2;
+-moz-transform:rotate(30deg);
+background-color:#dddddd;
+color:blue;
 }
-
 #D_Minor {
-  -moz-transform:rotate(315deg);
-   -webkit-transform:rotate(315deg);
-   -o-transform:rotate(315deg);
-   transform:rotate(315deg);
+-moz-transform:rotate(315deg);
 }
 #D_Minor .pie_minor {
-   color:blue;
-   -moz-transform:rotate(30deg);
-   -webkit-transform:rotate(30deg);
-   -o-transform:rotate(30deg);
-   transform:rotate(30deg);
+-moz-transform:rotate(30deg);
 background-color:white;
+color:blue;
 }
-
-
-
-/* Major labels */
 #C_Major-label {
-	position:absolute;
-	top:25px;
-	left:240px;
+left:240px;
+position:absolute;
+top:25px;
 }
-
 #G_Major-label {
-	position:absolute;
-	top:50px;
-	left:350px;
+left:350px;
+position:absolute;
+top:50px;
 }
-
 #D_Major-label {
-	position:absolute;
-	top:130px;
-	left:430px;
+left:430px;
+position:absolute;
+top:130px;
 }
-
 #A_Major-label {
-	position:absolute;
-	top:240px;
-	left:460px;
+left:460px;
+position:absolute;
+top:240px;
 }
-
 #E_Major-label {
-	position:absolute;
-	top:350px;
-	left:430px;
+left:430px;
+position:absolute;
+top:350px;
 }
-
 #B_Major-label {
-	position:absolute;
-	top:430px;
-	left:353px;
+left:353px;
+position:absolute;
+top:430px;
 }
-
 #Fsharp_Major-label {
-	position:absolute;
-	top:455px;
-	left:243px;
+left:243px;
+position:absolute;
+top:455px;
 }
-
 #Csharp_Major-label {
-	position:absolute;
-	top:430px;
-	left:135px;
+left:135px;
+position:absolute;
+top:430px;
 }
-
 #Ab_Major-label {
-	position:absolute;
-	top:350px;
-	left:52px;
+left:52px;
+position:absolute;
+top:350px;
 }
-
 #Eb_Major-label {
-	position:absolute;
-	top:245px;
-	left:15px;
+left:15px;
+position:absolute;
+top:245px;
 }
-
 #Bb_Major-label {
-	position:absolute;
-	top:135px;
-	left:45px;
+left:45px;
+position:absolute;
+top:135px;
 }
-
 #F_Major-label {
-	position:absolute;
-	top:50px;
-	left:130px;
+left:130px;
+position:absolute;
+top:50px;
 }
-
-/* Minor labels */
 #C_Minor-label {
-	position:absolute;
-	top:240px;
-	left:73px;
+left:73px;
+position:absolute;
+top:240px;
 }
-
 #G_Minor-label {
-	position:absolute;
-	top:160px;
-	left:95px;
+left:95px;
+position:absolute;
+top:160px;
 }
-
 #D_Minor-label {
-	position:absolute;
-	top:95px;
-	left:150px;
+left:150px;
+position:absolute;
+top:95px;
 }
-
 #A_Minor-label {
-	position:absolute;
-	top:80px;
-	left:234px;
+left:234px;
+position:absolute;
+top:80px;
 }
-
 #E_Minor-label {
-	position:absolute;
-	top:95px;
-	left:315px;
+left:315px;
+position:absolute;
+top:95px;
 }
-
 #B_Minor-label {
-	position:absolute;
-	top:160px;
-	left:370px;
+left:370px;
+position:absolute;
+top:160px;
 }
-
 #Fsharp_Minor-label {
-	position:absolute;
-	top:240px;
-	left:385px;
+left:385px;
+position:absolute;
+top:240px;
 }
-
 #Csharp_Minor-label {
-	position:absolute;
-	top:315px;
-	left:365px;
+left:365px;
+position:absolute;
+top:315px;
 }
-
 #Ab_Minor-label {
-	position:absolute;
-	top:380px;
-	left:315px;
+left:315px;
+position:absolute;
+top:380px;
 }
-
 #Eb_Minor-label {
-	position:absolute;
-	top:405px;
-	left:233px;
+left:233px;
+position:absolute;
+top:405px;
 }
-
 #Bb_Minor-label {
-	position:absolute;
-	top:380px;
-	left:150px;
+left:150px;
+position:absolute;
+top:380px;
 }
-
 #F_Minor-label {
-	position:absolute;
-	top:325px;
-	left:97px;
+left:97px;
+position:absolute;
+top:325px;
 }
-
-/* The selected slices */
 .selected_slice {
-	background-color:green !important;
+background-color:green !important;
 }
-
 .selected_slice_minor {
-	background-color:#2DCD87 !important;
+background-color:#2DCD87 !important;
 }
-
 .selected_key_text {
-	color:white;
+color:white;
 }
