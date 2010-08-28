@@ -68,6 +68,14 @@ a#toggle_instr:hover {
 	padding: 5px 5px 5px 5px;
 }
 
+.odd {
+	background-color:#CAC18A;
+}
+
+table {
+	border-collapse:collapse;
+}
+
 #chord_selector td {
 	cursor:pointer;
 	padding:5px;

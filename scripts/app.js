@@ -6,6 +6,9 @@ $(document).ready(function() {
 		$('#instructions').slideToggle('medium', function() { });
 	});
 
+	//  apply .odd to every other table row for readability
+	$('#chord_selector tr:odd').addClass('odd');
+	
 	//  apply .highlight to each of the above td
 	$('#chord_selector td').addClass('highlight');
 
