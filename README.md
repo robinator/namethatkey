@@ -9,6 +9,6 @@
 
 A small website to help determine which key a set of musical chords is in.
 
-Demo [here](http://robinator.github.com/namethatkey)
+Demo [here](http://robinator.github.com/namethatkey).
 
 &copy; 2010 Garrett Grimm and Rob Law
