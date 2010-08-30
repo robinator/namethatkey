@@ -65,9 +65,14 @@ a#toggle_instr:hover {
 	border:1px solid #C8C36E;
 	width:49%;
 	height:750px;
-	padding: 5px 5px 5px 5px;
+	padding: 5px;
 }
-
+.odd {
+	background-color: #CAC18A;
+}
+table {
+	border-collapse:collapse;
+}
 #chord_selector td {
 	cursor:pointer;
 	padding:5px;
