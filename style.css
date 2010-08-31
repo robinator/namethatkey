@@ -33,8 +33,8 @@ a:hover {
 }
 
 a#toggle_instr {
-	-moz-border-radius:23px 23px 23px 23px;
-	-webkit-border-radius:23px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
 	background-color:#264A6F;
 	border:2px solid #777777;
 	color:#FFFFFF;
@@ -74,8 +74,8 @@ a#toggle_instr:hover {
 }
 
 #chord_selector td {
-	-moz-border-radius:23px 23px 23px 23px;
-	-webkit-border-radius:23px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
 	border:1px solid #999999;
 	cursor:pointer;
 	font-size:14px;
@@ -97,25 +97,23 @@ a#toggle_instr:hover {
 }
 
 .selected:hover {
-	background-color:#ddd;
+	background-color:#BAA7CD;
 }
 
 a#clear_selected {
-	-moz-border-radius:23px 23px 23px 23px;
-	-webkit-border-radius:23px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
 	background-color:#FFFFFF;
 	border:1px solid #777777;
 	color:#111111;
-	padding:0px;
-	width:610px;
-	display:block;
-	font-size:2em;
+	padding:5px;
+	font-size:1.2em;
 	text-align:center;
 	line-height:1;
 }
 
 a#clear_selected:hover {
-	background-color:#ddd;
+	background-color:#BAA7CD;
 	border:1px solid #777777;
 	color:#111111;
 }
