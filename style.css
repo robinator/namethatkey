@@ -30,6 +30,10 @@ a:hover {
 
 #header h1 {
 	color:#DDDDDD;
+	letter-spacing:-3px;
+}
+h3 {
+	color:#264a6f;
 }
 
 a#toggle_instr {
@@ -87,7 +91,7 @@ a#toggle_instr:hover {
 }
 
 .highlight:hover {
-	background-color:#D7E1EC;
+	background-color:#A6BCCD;
 	color:#111111;
 }
 
@@ -107,9 +111,11 @@ a#clear_selected {
 	border:1px solid #777777;
 	color:#111111;
 	padding:5px;
-	font-size:1.2em;
+	font-size:1em;
 	text-align:center;
 	line-height:1;
+	display:block;
+	width:606px;
 }
 
 a#clear_selected:hover {
@@ -220,7 +226,7 @@ a#clear_selected:hover {
 }
 #G_Major .pie {
 	color:#111111;
-	background-color:#ddd;
+	background-color:#DDDDDD;
 	-moz-transform:rotate(30deg);
 	-webkit-transform:rotate(30deg);
 	-o-transform:rotate(30deg);
@@ -266,7 +272,7 @@ a#clear_selected:hover {
 }
 #B_Major .pie {
 	color:#111111;
-	background-color:#ddd;
+	background-color:#DDDDDD;
 	-moz-transform:rotate(30deg);
 	-webkit-transform:rotate(30deg);
 	-o-transform:rotate(30deg);
@@ -296,7 +302,7 @@ a#clear_selected:hover {
 }
 #Csharp_Major .pie {
 	color:#111111;
-	background-color:#ddd;
+	background-color:#DDDDDD;
 	-moz-transform:rotate(30deg);
 	-webkit-transform:rotate(30deg);
 	-o-transform:rotate(30deg);
@@ -326,7 +332,7 @@ a#clear_selected:hover {
 }
 #Eb_Major .pie {
 	color:#111111;
-	background-color:#ddd;
+	background-color:#DDDDDD;
 	-moz-transform:rotate(30deg);
 	-webkit-transform:rotate(30deg);
 	-o-transform:rotate(30deg);
@@ -356,7 +362,7 @@ a#clear_selected:hover {
 }
 #F_Major .pie {
 	color:#111111;
-	background-color:#ddd;
+	background-color:#DDDDDD;
 	-moz-transform:rotate(30deg);
 	-webkit-transform:rotate(30deg);
 	-o-transform:rotate(30deg);
@@ -426,7 +432,7 @@ a#clear_selected:hover {
 }
 #E_Minor .pie_minor {
 	color:#111111;
-	background-color:#FFFFFF;
+	background-color:#EEEEEE;
 	-moz-transform:rotate(30deg);
 	-webkit-transform:rotate(30deg);
 	-o-transform:rotate(30deg);
@@ -441,7 +447,7 @@ a#clear_selected:hover {
 }
 #Fsharp_Minor .pie_minor {
 	color:#111111;
-	background-color:#FFFFFF;
+	background-color:#EEEEEE;
 	-moz-transform:rotate(30deg);
 	-webkit-transform:rotate(30deg);
 	-o-transform:rotate(30deg);
@@ -471,7 +477,7 @@ a#clear_selected:hover {
 }
 #Ab_Minor .pie_minor {
 	color:#111111;
-	background-color:#FFFFFF;
+	background-color:#EEEEEE;
 	-moz-transform:rotate(30deg);
 	-webkit-transform:rotate(30deg);
 	-o-transform:rotate(30deg);
@@ -501,7 +507,7 @@ a#clear_selected:hover {
 }
 #Bb_Minor .pie_minor {
 	color:#111111;
-	background-color:#FFFFFF;	
+	background-color:#EEEEEE;	
 	-moz-transform:rotate(30deg);
 	-webkit-transform:rotate(30deg);
 	-o-transform:rotate(30deg);
@@ -531,7 +537,7 @@ a#clear_selected:hover {
 }
 #C_Minor .pie_minor {
 	color:#111111;
-	background-color:#FFFFFF;
+	background-color:#EEEEEE;
 	-moz-transform:rotate(30deg);
 	-webkit-transform:rotate(30deg);
 	-o-transform:rotate(30deg);
@@ -561,7 +567,7 @@ a#clear_selected:hover {
 }
 #D_Minor .pie_minor {
 	color:#111111;
-	background-color:#FFFFFF;
+	background-color:#EEEEEE;
 	-moz-transform:rotate(30deg);
 	-webkit-transform:rotate(30deg);
 	-o-transform:rotate(30deg);
