@@ -76,8 +76,8 @@ a#toggle_instr:hover {
 	margin-left:10px;
 	width:48%;
 }
-.odd {
-	background-color: #D6E3F1;
+.odd td {
+	background-color: #eee;
 }
 #chord_selector td {
 	-moz-border-radius:10px;
@@ -98,7 +98,7 @@ a#toggle_instr:hover {
 }
 
 .selected {
-	background-color:#CAE1A5;
+	background-color:#CAE1A5 !important;
 	color:#264A6F;
 }
 
