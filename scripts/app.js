@@ -8,11 +8,7 @@ $(document).ready(function() {
 
 	//  apply .odd to every other table row for readability
 	$('#chord_selector tr:odd').addClass('odd');
-	
-	
-	// jQuery tools - tool tip library.  http://flowplayer.org/tools/tooltip/index.html
-	//$('[title]').tooltip({ effect: 'slide'});
-	
+
 	//  apply .highlight to each of the above td
 	$('#chord_selector td').addClass('highlight');
 
