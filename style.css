@@ -721,3 +721,17 @@ background-color:white;
 .selected_key_text {
 	color:white;
 }
+
+/* tooltip styling. by default the element to be styled is .tooltip  */
+.tooltip {
+	display:none;
+	background-color:gray;
+	border:1px solid black;
+	font-size:12px;
+	padding:5px;
+	color:#fff;	
+	height:30px;
+	width:75px;
+	-moz-border-radius: 5px;
+}
+
