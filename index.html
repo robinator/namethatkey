@@ -24,13 +24,17 @@
 	<script src="scripts/keys.js" type="text/javascript"></script>
 	<script src="scripts/app.js" type="text/javascript"></script>
 	
-	<!-- recommended to avoid security warnings with SVG in IE8 -->
+	<!--nyromodal (modal window plugin) http://nyromodal.nyrodev.com/-->
+	<script src="scripts/nyroModal-1.6.2/js/jquery.nyroModal-1.6.2.min.js" type="text/javascript"></script>
+	<link href="scripts/nyroModal-1.6.2/styles/nyroModal.css" media="all" rel="stylesheet" type="text/css"/>
+	
+	<!-- JTAB recommended to avoid security warnings with SVG in IE8 -->
   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /> 
     
-  <!-- mandatory script includes for jtab -->
-  <script src="jtab/prototype.js" type="text/javascript"></script>
-  <script src="jtab/raphael.js" type="text/javascript"></script>
-  <script src="jtab/jtab.js" type="text/javascript"></script>
+  <!-- JTAB mandatory script includes for jtab -->
+  <script src="scripts/jtab/prototype.js" type="text/javascript"></script>
+  <script src="scripts/jtab/raphael.js" type="text/javascript"></script>
+  <script src="scripts/jtab/jtab.js" type="text/javascript"></script>
 
 </head>
 <body>
@@ -217,7 +221,18 @@
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
 	</script>
-	<div class="jtab"> E | F#m | G#m | A | B | C#m | D#dim | </div>
 	
+	
+	<div id="diatonic_tabs">
+		<h3>Diatonic Chords in the Key of E Major</h3>
+		<table>
+			<tr><th>I</th><th>ii</th><th>iii</th><th>IV</th><th>V</th><th>vi</th><th>vii&deg;</th></tr>
+			<tr><td><span class="jtab">E</span></td><td><span class="jtab">F#m</span></td><td><span class="jtab">G#m</span></td><td><span class="jtab">A</span></td><td><span class="jtab">B</span></td><td><span class="jtab">C#m</span></td><td><span class="jtab">D#dim</span></td></tr>
+		</table>
+	</div>
+	
+	
+<a href="#diatonic_tabs" class="nyroModal">DOM Element (hidden div)</a><br />
+<a href="diatonic_tabs.html" class="nyroModal">External Site Test</a>
 </body>
 </html>

@@ -26,4 +26,6 @@ jQuery(document).ready(function() {
 		jQuery('#chord_selector td').removeClass('selected');
 		namethatkey();
 	});
+
+	
 });

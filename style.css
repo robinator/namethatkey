@@ -732,6 +732,18 @@ a#clear_selected:hover {
 	left:97px;
 }
 
+#key_labels div {
+	cursor:pointer;
+	padding:5px;
+}
+
+#key_labels div:hover {
+	background-color:pink;
+	padding:5px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	}
+
 /* The selected slices */
 .selected_slice {
 	background-color:#CAE1A5 !important;
@@ -755,4 +767,16 @@ a#clear_selected:hover {
 }
 .jtab.tabonly {
   height:100px;
+}
+
+/* jQuery tools */
+
+.tooltip {
+	display:none;
+	background:transparent url(/tools/img/tooltip/black_arrow.png);
+	font-size:12px;
+	height:70px;
+	width:160px;
+	padding:25px;
+	color:#fff;	
 }
