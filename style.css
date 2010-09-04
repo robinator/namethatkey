@@ -37,8 +37,8 @@ a:hover {
 #header h1 {
 	color:green;
 	font-family: Zitti;
-	font-size:40px;
-	margin:3px;
+	font-size:65px;
+	margin:0px 0px 0px 0px;
 }
 h3 {
 	color:#264a6f;
@@ -742,5 +742,17 @@ a#clear_selected:hover {
 }
 
 .selected_key_text {
-	color:#FFFFFF;
+	color:black;
+}
+
+/* jTab stuff */
+
+.jtab {
+  height:218px;
+}
+.jtab.chordonly {
+  height:118px;
+}
+.jtab.tabonly {
+  height:100px;
 }
