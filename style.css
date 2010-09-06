@@ -732,12 +732,12 @@ a#clear_selected:hover {
 	left:97px;
 }
 
-#key_labels div {
-	cursor:pointer;
+// key label stylings
+#key_labels a {
 	padding:5px;
 }
-
-#key_labels div:hover {
+	
+#key_labels a:hover {
 	background-color:pink;
 	padding:5px;
 	-moz-border-radius:10px;
@@ -769,14 +769,3 @@ a#clear_selected:hover {
   height:100px;
 }
 
-/* jQuery tools */
-
-.tooltip {
-	display:none;
-	background:transparent url(/tools/img/tooltip/black_arrow.png);
-	font-size:12px;
-	height:70px;
-	width:160px;
-	padding:25px;
-	color:#fff;	
-}
