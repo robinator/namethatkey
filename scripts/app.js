@@ -34,7 +34,7 @@ jQuery(document).ready(function() {
 			
 	jQuery("#key_labels a").fancybox({
 				'width'				: '90%',
-				'height'			: '50%',
+				'height'			: '60%',
 				'autoScale'			: true,
 				'transitionIn'		: 'fade',
 				'transitionOut'		: 'none',
