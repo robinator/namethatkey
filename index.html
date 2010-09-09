@@ -1,8 +1,17 @@
 <!DOCTYPE HTML>
 <html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+
+	<script type="text/javascript">
+	//  Redirect if using iphone
+		if ((navigator.userAgent.indexOf('iPhone') != -1) ||
+		(navigator.userAgent.indexOf('iPod') != -1)) {
+		document.location = "/iphone/";
+		}
+	</script>
+	
 	<title>Name That Key - Find a Song's Key by It's Chords</title>
-  <meta charset="utf-8" />
+	<meta charset="utf-8" />
 	<meta name="copyright" content="Garrett Grimm &amp; Rob Law, 2010" />
 	<meta name="keywords" content="find a song key by chords, figure out a keys, music, chords, guitar, piano, find key online tool" />
 	<meta name="description" content="Automatically get the key to a song by its chords." />
@@ -13,26 +22,39 @@
 	<script src="scripts/underscore.min.js" type="text/javascript"></script>
 	<script src="scripts/jquery.min.js" type="text/javascript"></script>
 	<script src="scripts/keys.js" type="text/javascript"></script>
-	<script src="scripts/app.js" type="text/javascript"></script>	
+	<script src="scripts/app.js" type="text/javascript"></script>
+	
+	<!-- JTAB recommended to avoid security warnings with SVG in IE8 -->
+  	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /> 
+    
+  	<!-- JTAB mandatory script includes for jtab -->
+  	<script src="scripts/jtab/prototype.js" type="text/javascript"></script>
+  	<script src="scripts/jtab/raphael.js" type="text/javascript"></script>
+ 	<script src="scripts/jtab/jtab.js" type="text/javascript"></script>
+ 	
+ 	<!-- fancybox modal window -->
+ 	<script type="text/javascript" src="scripts/fancybox/jquery.mousewheel-3.0.2.pack.js"></script>
+	<script type="text/javascript" src="scripts/fancybox/jquery.fancybox-1.3.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="scripts/fancybox/jquery.fancybox-1.3.1.css" media="screen" />
+
 </head>
 <body>
 	<div id="wrapper">
-		<div id="header">
-			<h1>Name That Key</h1>
-			<a href="javascript:;" id="toggle_instr"><small>Instructions</small></a>
-			<div id="social">
-				<a class="DiggThisButton DiggMedium"></a>
-				<a href="http://twitter.com/home?status=I%20used%20Name%20That%20Key%20-%20www.namethatkey.com%20to%20find%20the%20key%20of%20a%20song!" target="_blank">
-					<img src="images/twitter.png" alt="Add to Twitter" title="Tweet This" />
-				</a>
-				<iframe src="http://www.facebook.com/plugins/like.php?href=www.namethatkey.com&amp;layout=button_count&amp;show_faces=false&amp;width=75&amp;action=like&amp;colorscheme=light&amp;height=21" style="border:none; overflow:hidden; width:75px; height:21px;"></iframe>
-			</div>			
-		</div>
 		<div id="instructions">
 			<p>To see an educated guess as to what key a song's in by it's chords, choose the chords below (up to 5) and see the results in the green box.  This searches all 12 possible keys for the selected chords (diatonically) and returns the keys with most matches.  If there is more than one key that contains the selected chords it will display all relevant keys.</p>
 		</div>
+		<div id="header">
+			<!--
+			<div id="toggle_instr">
+				<a href="javascript:;"><small>Instructions</small></a>	
+			</div>
+			-->
+			<h1>Name That Key</h1>
+			
+		</div>
+		
 		<div id="enterchords">
-			<h3>Pick Chords to Find the Key</h3>
+			<h3>#1 Pick Chords to Find the Key</h3>
 			<table id="chord_selector">
 				<tr><th>Major</th><th>Minor</th><th>Dominant 7</th><th>Major 7</th><th>Minor 7</th><th>Diminished</th></tr>
 				<tr><td>C</td><td>Cm</td><td>C7</td><td>Cmaj7</td><td>Cm7</td><td>Cdim</td></tr>
@@ -59,7 +81,7 @@
 			<a href="javascript:;" id="clear_selected"><small>Clear Selections</small></a>
 		</div>
 		<div id="result">
-			<h3>The Key</h3>
+			<h3>#2  See The Key</h3>
 			<p id="thekey"></p>
 			<div id="keyletter"></div>
 			<div id="circle_of_fifths">
@@ -146,32 +168,32 @@
 
 				<!--Major Labels-->
 				<div id="key_labels">
-					<div id="C_Major-label">C</div>
-					<div id="G_Major-label">G</div>
-					<div id="D_Major-label">D</div>
-					<div id="A_Major-label">A</div>
-					<div id="E_Major-label">E</div>
-					<div id="B_Major-label">B</div>
-					<div id="Fsharp_Major-label">F#</div>
-					<div id="Csharp_Major-label">C#</div>
-					<div id="Ab_Major-label">Ab</div>
-					<div id="Eb_Major-label">Eb</div>
-					<div id="Bb_Major-label">Bb</div>
-					<div id="F_Major-label">F</div>
+					<div id="C_Major-label"><a href="diatonic_tabs.html?key=C">C</a></div>
+					<div id="G_Major-label"><a href="diatonic_tabs.html?key=G">G</a></div>
+					<div id="D_Major-label"><a href="diatonic_tabs.html?key=D">D</a></div>
+					<div id="A_Major-label"><a href="diatonic_tabs.html?key=A">A</a></div>
+					<div id="E_Major-label"><a href="diatonic_tabs.html?key=E">E</a></div>
+					<div id="B_Major-label"><a href="diatonic_tabs.html?key=B">B</a></div>
+					<div id="Fsharp_Major-label"><a href="diatonic_tabs.html?key=Fsharp">F#</a></div>
+					<div id="Csharp_Major-label"><a href="diatonic_tabs.html?key=Db">Db</a></div>
+					<div id="Ab_Major-label"><a href="diatonic_tabs.html?key=Ab">Ab</a></div>
+					<div id="Eb_Major-label"><a href="diatonic_tabs.html?key=Eb">Eb</a></div>
+					<div id="Bb_Major-label"><a href="diatonic_tabs.html?key=Bb">Bb</a></div>
+					<div id="F_Major-label"><a href="diatonic_tabs.html?key=F">F</a></div>
 
-        <!--Minor Labels-->
-					<div id="C_Minor-label">Cm</div>
-					<div id="G_Minor-label">Gm</div>
-					<div id="D_Minor-label">Dm</div>
-					<div id="A_Minor-label">Am</div>
-					<div id="E_Minor-label">Em</div>
-					<div id="B_Minor-label">Bm</div>
-					<div id="Fsharp_Minor-label">F#m</div>
-					<div id="Csharp_Minor-label">C#m</div>
-					<div id="Ab_Minor-label">Abm</div>
-					<div id="Eb_Minor-label">Ebm</div>
-					<div id="Bb_Minor-label">Bbm</div>
-					<div id="F_Minor-label">Fm</div>
+     			   <!--Minor Labels-->
+					<div id="C_Minor-label"><a href="diatonic_tabs.html?key=Cm">Cm</a></div>
+					<div id="G_Minor-label"><a href="diatonic_tabs.html?key=Gm">Gm</a></div>
+					<div id="D_Minor-label"><a href="diatonic_tabs.html?key=Dm">Dm</a></div>
+					<div id="A_Minor-label"><a href="diatonic_tabs.html?key=Am">Am</a></div>
+					<div id="E_Minor-label"><a href="diatonic_tabs.html?key=Em">Em</a></div>
+					<div id="B_Minor-label"><a href="diatonic_tabs.html?key=Bm">Bm</a></div>
+					<div id="Fsharp_Minor-label"><a href="diatonic_tabs.html?key=Fsharpm">F#m</a></div>
+					<div id="Csharp_Minor-label"><a href="diatonic_tabs.html?key=Db">Dbm</a></div>
+					<div id="Ab_Minor-label"><a href="diatonic_tabs.html?key=Abm">Abm</a></div>
+					<div id="Eb_Minor-label"><a href="diatonic_tabs.html?key=Ebm">Ebm</a></div>
+					<div id="Bb_Minor-label"><a href="diatonic_tabs.html?key=Bbm">Bbm</a></div>
+					<div id="F_Minor-label"><a href="diatonic_tabs.html?key=Fm">Fm</a></div>
 				</div>
 			</div>
 		</div>
@@ -187,16 +209,6 @@
 			</p>
 		</div>
 	</div><!--/wrapper-->
-	<!--Digg Script-->
-	<script type="text/javascript">
-		(function() {
-		var s = document.createElement('SCRIPT'), s1 = document.getElementsByTagName('SCRIPT')[0];
-		s.type = 'text/javascript';
-		s.async = true;
-		s.src = 'http://widgets.digg.com/buttons.js';
-		s1.parentNode.insertBefore(s, s1);
-		})();
-	</script>
 
 	<!-- google analytics -->
 	<script type="text/javascript">
@@ -209,6 +221,6 @@
 	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
-	</script>
+	</script>	
 </body>
 </html>

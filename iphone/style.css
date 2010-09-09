@@ -37,8 +37,8 @@ a:hover {
 #header h1 {
 	color:green;
 	font-family: Zitti;
-	font-size:65px;
-	margin:0px 0px 0px 0px;
+	font-size:40px;
+	margin:3px;
 }
 h3 {
 	color:#264a6f;
@@ -116,10 +116,6 @@ a#toggle_instr:hover {
 
 .selected:hover {
 	background-color:#BAA7CD;
-}
-
-tr.odd {
-	background-color:#D4D8B0;
 }
 
 a#clear_selected {
@@ -736,19 +732,6 @@ a#clear_selected:hover {
 	left:97px;
 }
 
-// key label stylings
-#key_labels a {
-	padding:5px;
-	border:none;
-}
-	
-#key_labels a:hover {
-	background-color:pink;
-	padding:5px;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	}
-
 /* The selected slices */
 .selected_slice {
 	background-color:#CAE1A5 !important;
@@ -759,18 +742,5 @@ a#clear_selected:hover {
 }
 
 .selected_key_text {
-	color:black;
+	color:#FFFFFF;
 }
-
-/* jTab stuff */
-
-.jtab {
-  height:218px;
-}
-.jtab.chordonly {
-  height:118px;
-}
-.jtab.tabonly {
-  height:100px;
-}
-

@@ -1,6 +1,3 @@
-//  jQuery no conflict mode for no prototype issues
- jQuery.noConflict();
-
 var Keys = {
 	// MAJOR KEYS
 	// C major
@@ -120,50 +117,50 @@ function topKey(keys, chords) {
 
 //  the function that finds the key
 function namethatkey() {
-	var chords = jQuery.makeArray(jQuery('.selected').map(function() {
-		return jQuery(this).html();
+	var chords = $.makeArray($('.selected').map(function() {
+		return $(this).html();
 	}));
 
 	var topkeys = topKey(Keys, chords);
 	
-	jQuery('#result').css('display', 'block');
-	jQuery('#thekey').html("A song with chords: " + chords.join(", ") + " is most likely in the key of");
+	$('#result').css('display', 'block');
+	$('#thekey').html("A song with chords: " + chords.join(", ") + " is most likely in the key of");
 	// document.getElementById('keyletter').innerHTML = topkeys.join("<br /><span class='or'>or</span><br /> ");
 
 	// if no chords are selected don't show the #result div
-	//if (jQuery('.selected').length == 0) {
-	//	jQuery('#result').hide();
+	//if ($('.selected').length == 0) {
+	//	$('#result').hide();
 	//}
 	
 	// Circle of Fifth Highlighting
 	// Remove all selected_slice/selected_slice_minor/selected_key_text classes to reset
-	jQuery('.selected_slice').removeClass('selected_slice');
-	jQuery('.selected_slice_minor').removeClass('selected_slice_minor');
-	jQuery('.selected_key_text').removeClass('selected_key_text');
+	$('.selected_slice').removeClass('selected_slice');
+	$('.selected_slice_minor').removeClass('selected_slice_minor');
+	$('.selected_key_text').removeClass('selected_key_text');
 
 	// Give the resulting Major ids .selected_slice
 	_(topkeys).each(function(item,index) {
 		var id = item.replace(" ", "_").replace("#", "sharp");
-		jQuery('#'+id+' .pie').addClass('selected_slice');
+		$('#'+id+' .pie').addClass('selected_slice');
 	});
 	
 	// Give the resulting Minor ids .selected_slice_minor
 	_(topkeys).each(function(item,index) {
 		var id = item.replace(" ", "_").replace("#", "sharp");
-		jQuery('#'+id+' .pie_minor').addClass('selected_slice_minor');
+		$('#'+id+' .pie_minor').addClass('selected_slice_minor');
 	});
 	
 	// Highlight circle labels by adding .selected_key_text
 	_(topkeys).each(function(item,index) {
 		var id = item.replace(" ", "_").replace("#", "sharp");
 		id += '-label';
-		jQuery('#'+id).addClass('selected_key_text');
+		$('#'+id).addClass('selected_key_text');
 	});
 	
 	// Remove all selected_slice/selected_slice_minor/selected_key_text classes if nothing is selected
-	if (jQuery('#chord_selector td.selected').length == 0) {
-		jQuery('.selected_slice').removeClass('selected_slice');
-		jQuery('.selected_slice_minor').removeClass('selected_slice_minor');
-		jQuery('.selected_key_text').removeClass('selected_key_text');
+	if ($('#chord_selector td.selected').length == 0) {
+		$('.selected_slice').removeClass('selected_slice');
+		$('.selected_slice_minor').removeClass('selected_slice_minor');
+		$('.selected_key_text').removeClass('selected_key_text');
 	}
 }
