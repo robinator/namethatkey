@@ -127,7 +127,7 @@ function namethatkey() {
 	var topkeys = topKey(Keys, chords);
 	
 	jQuery('#result').css('display', 'block');
-	jQuery('#thekey').html("A song with chords: " + chords.join(", ") + " is most likely in the key of");
+	// jQuery('#thekey').html("A song with chords: " + chords.join(", ") + " is most likely in the key of");
 	// document.getElementById('keyletter').innerHTML = topkeys.join("<br /><span class='or'>or</span><br /> ");
 
 	// if no chords are selected don't show the #result div
