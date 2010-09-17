@@ -30,16 +30,4 @@ jQuery(document).ready(function() {
 	//  Add .jtab to all <td> within #diatonic_chords div
 	jQuery('#diatonic_chords td').addClass('jtab');
 	
-	// fancybox http://fancybox.net/ - adds a modal window to all a within #key_labels
-			
-	jQuery("#key_labels a").fancybox({
-				'width'				: '90%',
-				'height'			: '60%',
-				'autoScale'			: true,
-				'transitionIn'		: 'fade',
-				'transitionOut'		: 'none',
-				'type'				: 'iframe'
-			});
-
-	
 });
