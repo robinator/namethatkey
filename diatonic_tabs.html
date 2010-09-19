@@ -26,16 +26,15 @@
  	<script src="scripts/jtab/jtab.js" type="text/javascript"></script>
 </head>
 <body style="background-color:white;">
-	<div id="diatonic_chords">
-		<h3>Diatonic Chords In This Key</h3>
-		<table>
-			
-			
+	<div id="diatonic_chords">	
 			<script type="text/javascript">
-				
-  				// jQuery url plugin gets variable from url
-				var key = jQuery.url.param('key');
- 				
+				// jQuery url plugin gets variable from url
+				var key = jQuery.url.param('key');	
+			
+				//  Write the header and table tag
+				document.write('<h3>Diatonic Chords In '+key+'<\/h3>');
+				document.write('<table>');
+  				
  				//  Major Key Tabs
  				var C = '<tr><td>C<\/td><td>Dm<\/td><td>Em<\/td><td>F<\/td><td>G<\/td><td>Am<\/td><td>Bdim<\/td><\/tr>';
  				var G = '<tr><td>G<\/td><td>Am<\/td><td>Bm<\/td><td>C<\/td><td>D<\/td><td>Em<\/td><td>F#dim<\/td><\/tr>';
