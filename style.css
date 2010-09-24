@@ -40,8 +40,15 @@ a:hover {
 	font-size:65px;
 	margin:0px 0px 0px 0px;
 }
+
 h3 {
 	color:#264a6f;
+	border-left:14px solid #EEEEEE;
+	padding-left:5px;
+}
+
+h3:hover {
+	border-left:14px solid #A6BCCD;
 }
 
 #toggle_instr {
@@ -684,7 +691,7 @@ a#clear_selected:hover {
 
 #A_Minor-label {
 	position:absolute;
-	top:80px;
+	top:70px;
 	left:234px;
 }
 
