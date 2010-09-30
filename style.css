@@ -56,21 +56,21 @@ h3:hover {
 }
 
 #toggle_instr a {
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
+	position:absolute;
+	left:490px;
+	top:-2px;
 	background-color:#264A6F;
-	border:2px solid #777777;
 	color:#FFFFFF;
 	line-height:2;
 	margin:2px;
-	padding:3px 5px;
+	width:30px;
+	height:30px;
 	text-align:center;
 	width:80px;
 }
 
 a#toggle_instr:hover {
-	border-color:#EEEEEE;
-	border-width:2px;
+border:2px solid black;
 }
 
 #social {
@@ -83,6 +83,7 @@ a#toggle_instr:hover {
 	background-color:#A6BCCD;
 	display:none;
 	line-height:22px;
+	margin:5px 0px 0px 0px;
 	padding:8px;
 	width:100%;
 }
