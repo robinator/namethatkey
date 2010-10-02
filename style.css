@@ -597,7 +597,7 @@ a#clear_selected:hover {
 #C_Major-label {
 	position:absolute;
 	top:25px;
-	left:240px;
+	left:237px;
 }
 
 #G_Major-label {
@@ -633,7 +633,7 @@ a#clear_selected:hover {
 #Fsharp_Major-label {
 	position:absolute;
 	top:455px;
-	left:243px;
+	left:237px;
 }
 
 #Csharp_Major-label {
@@ -688,7 +688,7 @@ a#clear_selected:hover {
 #A_Minor-label {
 	position:absolute;
 	top:70px;
-	left:234px;
+	left:231px;
 }
 
 #E_Minor-label {
@@ -724,7 +724,7 @@ a#clear_selected:hover {
 #Eb_Minor-label {
 	position:absolute;
 	top:405px;
-	left:233px;
+	left:226px;
 }
 
 #Bb_Minor-label {
@@ -739,7 +739,7 @@ a#clear_selected:hover {
 	left:97px;
 }
 
-// key label stylings
+/* key label stylings */
 #key_labels a {
 	padding:5px;
 	border:none;
@@ -747,6 +747,7 @@ a#clear_selected:hover {
 	
 #key_labels a:hover {
 	background-color:pink;
+	color:black;
 	padding:5px;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
