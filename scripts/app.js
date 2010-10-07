@@ -30,8 +30,8 @@ jQuery(document).ready(function() {
 	//  Add .jtab to all <td> within #diatonic_chords div
 	jQuery('#diatonic_chords td').addClass('jtab');
 	
-	//  Major Initialize Animation
 	/*
+	//  Major Initialize Animation
 	jQuery('#C_Major .pie').addClass('selected_slice');
 	setTimeout("jQuery('#C_Major .pie').removeClass('selected_slice')",150);
 	
@@ -69,42 +69,42 @@ jQuery(document).ready(function() {
 	setTimeout("jQuery('#F_Major .pie').removeClass('selected_slice')",1800);
 	
 		//  Minor Initialize Animation
-	jQuery('#A_Minor .pie').addClass('selected_slice_minor');
-	setTimeout("jQuery('#A_Minor .pie').removeClass('selected_slice_minor')",150);
+	jQuery('#A_Minor .pie_minor').addClass('selected_slice_minor');
+	setTimeout("jQuery('#A_Minor .pie_minor').removeClass('selected_slice_minor')",150);
 	
-	setTimeout("jQuery('#D_Minor .pie').addClass('selected_slice_minor')",150);
-	setTimeout("jQuery('#D_Minor .pie').removeClass('selected_slice_minor')",300);
+	setTimeout("jQuery('#D_Minor .pie_minor').addClass('selected_slice_minor')",150);
+	setTimeout("jQuery('#D_Minor .pie_minor').removeClass('selected_slice_minor')",300);
 	
-	setTimeout("jQuery('#G_Minor .pie').addClass('selected_slice')",300);
-	setTimeout("jQuery('#G_Minor .pie').removeClass('selected_slice')",450);
+	setTimeout("jQuery('#G_Minor .pie_minor').addClass('selected_slice_minor')",300);
+	setTimeout("jQuery('#G_Minor .pie_minor').removeClass('selected_slice_minor')",450);
 	
-	setTimeout("jQuery('#C_Minor .pie').addClass('selected_slice')",450);
-	setTimeout("jQuery('#C_Minor .pie').removeClass('selected_slice')",600);
+	setTimeout("jQuery('#C_Minor .pie_minor').addClass('selected_slice_minor')",450);
+	setTimeout("jQuery('#C_Minor .pie_minor').removeClass('selected_slice_minor')",600);
 	
-	setTimeout("jQuery('#F_Minor .pie').addClass('selected_slice')",600);
-	setTimeout("jQuery('#F_Minor .pie').removeClass('selected_slice')",750);
+	setTimeout("jQuery('#F_Minor .pie_minor').addClass('selected_slice_minor')",600);
+	setTimeout("jQuery('#F_Minor .pie_minor').removeClass('selected_slice_minor')",750);
 	
-	setTimeout("jQuery('#Bb_Minor .pie').addClass('selected_slice')",750);
-	setTimeout("jQuery('#Bb_Minor .pie').removeClass('selected_slice')",900);
+	setTimeout("jQuery('#Bb_Minor .pie_minor').addClass('selected_slice_minor')",750);
+	setTimeout("jQuery('#Bb_Minor .pie_minor').removeClass('selected_slice_minor')",900);
 	
-	setTimeout("jQuery('#Eb_Minor .pie').addClass('selected_slice')",900);
-	setTimeout("jQuery('#Eb_Minor .pie').removeClass('selected_slice')",1050);
+	setTimeout("jQuery('#Eb_Minor .pie_minor').addClass('selected_slice_minor')",900);
+	setTimeout("jQuery('#Eb_Minor .pie_minor').removeClass('selected_slice_minor')",1050);
 	
-	setTimeout("jQuery('#Ab_Minor .pie').addClass('selected_slice')",1050);
-	setTimeout("jQuery('#Ab_Minor .pie').removeClass('selected_slice')",1200);
+	setTimeout("jQuery('#Ab_Minor .pie_minor').addClass('selected_slice_minor')",1050);
+	setTimeout("jQuery('#Ab_Minor .pie_minor').removeClass('selected_slice_minor')",1200);
 	
-	setTimeout("jQuery('#Db_Minor .pie').addClass('selected_slice')",1200);
-	setTimeout("jQuery('#Db_Minor .pie').removeClass('selected_slice')",1350);
+	setTimeout("jQuery('#Csharp_Minor .pie_minor').addClass('selected_slice_minor')",1200);
+	setTimeout("jQuery('#Csharp_Minor .pie_minor').removeClass('selected_slice_minor')",1350);
 	
-	setTimeout("jQuery('#Fsharp_Minor .pie').addClass('selected_slice')",1350);
-	setTimeout("jQuery('#Fsharp_Minor .pie').removeClass('selected_slice')",1500);
+	setTimeout("jQuery('#Fsharp_Minor .pie_minor').addClass('selected_slice_minor')",1350);
+	setTimeout("jQuery('#Fsharp_Minor .pie_minor').removeClass('selected_slice_minor')",1500);
 	
-	setTimeout("jQuery('#B_Minor .pie').addClass('selected_slice')",1500);
-	setTimeout("jQuery('#B_Minor .pie').removeClass('selected_slice')",1650);
+	setTimeout("jQuery('#B_Minor .pie_minor').addClass('selected_slice_minor')",1500);
+	setTimeout("jQuery('#B_Minor .pie_minor').removeClass('selected_slice_minor')",1650);
 	
-	setTimeout("jQuery('#E_Minor .pie').addClass('selected_slice')",1650);
-	setTimeout("jQuery('#E_Minor .pie').removeClass('selected_slice')",1800);
-	*/
+	setTimeout("jQuery('#E_Minor .pie_minor').addClass('selected_slice_minor')",1650);
+	setTimeout("jQuery('#E_Minor .pie_minor').removeClass('selected_slice_minor')",1800);
+*/
 	
 	
 });
