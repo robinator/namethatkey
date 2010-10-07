@@ -43,14 +43,13 @@ a:hover {
 
 h3 {
 	color:#264a6f;
-	border-left:14px solid #EEEEEE;
+	border-left:14px solid #A6BCCD;
 	padding-left:5px;
 }
 
-h3:hover {
-	border-left:14px solid #A6BCCD;
+.underline {
+	text-decoration:underline;
 }
-
 
 #toggle_instr {
 	position:absolute;
