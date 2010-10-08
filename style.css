@@ -37,7 +37,7 @@ a:hover {
 #header h1 {
 	color:green;
 	font-family: Zitti;
-	font-size:65px;
+	font-size:50px;
 	margin:0px 0px 0px 0px;
 }
 
@@ -91,7 +91,7 @@ h3 {
 #enterchords {
 	background-color:#FFFFFF;
 	float:left;
-	height:830px;
+	height:765px;
 	padding:0px;
 	margin-left:10px;
 	width:48%;
@@ -107,7 +107,7 @@ h3 {
 	font-size:14px;
 	line-height:23px;
 	margin:0;
-	padding:4px;
+	padding:3px;
 	text-align:center;
 	width:90px;
 }
