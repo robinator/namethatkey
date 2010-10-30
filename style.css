@@ -88,6 +88,12 @@ h3 {
 	border-bottom:1px solid #3399FF;
 }
 
+#ie_nag {
+	background-color: #FCDFFF;
+	border: 1px solid red;
+	padding: 5px;
+}
+
 #enterchords {
 	background-color:#FFFFFF;
 	float:left;
