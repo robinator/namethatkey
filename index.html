@@ -2,6 +2,7 @@
 <html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
+	<!--
 	<script type="text/javascript">
 	//  Redirect if using iphone
 		if ((navigator.userAgent.indexOf('iPhone') != -1) ||
@@ -9,6 +10,7 @@
 		document.location = "/iphone/";
 		}
 	</script>
+	-->
 	
 	<title>Name That Key - Find a Song's Key by It's Chords</title>
 	<meta charset="utf-8" />
@@ -36,9 +38,6 @@
   	<script src="scripts/jtab/prototype.js" type="text/javascript"></script>
   	<script src="scripts/jtab/raphael.js" type="text/javascript"></script>
  	<script src="scripts/jtab/jtab.js" type="text/javascript"></script>
- 	
- 	
- 
 
 </head>
 <body>
@@ -50,6 +49,9 @@
 		<div id="instructions">
 			<p>To see the probable key of a song judging by it's chords, choose the chords below and see the highlighted slices on the circle of fifths to the right.  This searches all 12 possible keys for the selected chords (diatonically) and returns the keys with most matches.  If there is more than one key that contains the selected chords it will display all relevant keys.</p>
 			<p>Clicking any key in the circle of fifths will display all diatonic chords within that key as guitar chords for you string ticklers.</p>
+		</div>
+		<div id="ie_nag" style="display:none">
+			<p>Uh oh, looks like you're using Internet Explorer... Name That Key isn't supported on Internet Explorer.  Try Firefox instead:  <a href='http://www.mozilla.com/en-US/' target="_blank"><img src='http://sfx-images.mozilla.org/firefox/3.6/110x32_get_orange.png' /></a></p>
 		</div>
 		<div id="enterchords">
 			<h3>#1 Pick Chords to Find the Key</h3>
@@ -90,13 +92,13 @@
 				<!--Major Pie-->
 				<div id="major_pie">
 					<div id="C_Major" class="hold">
-			    	<div class="pie"></div>
+			    		<div class="pie"></div>
 					</div>
 					<div id="D_Major" class="hold">
-			 		  <div class="pie"></div>
+			 			<div class="pie"></div>
 					</div>
 					<div id="G_Major" class="hold">
-			 		  <div class="pie"></div>
+			 			<div class="pie"></div>
 					</div>
 					<div id="A_Major" class="hold">
 						<div class="pie"></div>
@@ -145,25 +147,25 @@
 			 			<div class="pie_minor"></div>
 					</div>
 					<div id="Ab_Minor" class="hold_minor">
-			  		<div class="pie_minor"></div>
+			  			<div class="pie_minor"></div>
 					</div>
 					<div id="Eb_Minor" class="hold_minor">
-			  		<div class="pie_minor"></div>
+			  			<div class="pie_minor"></div>
 					</div>
 					<div id="Bb_Minor" class="hold_minor">
-			   		<div class="pie_minor"></div>
+			   			<div class="pie_minor"></div>
 					</div>
 					<div id="F_Minor" class="hold_minor">
-			   		<div class="pie_minor"></div>
+			   			<div class="pie_minor"></div>
 					</div>
 					<div id="C_Minor" class="hold_minor">
-			   		<div class="pie_minor"></div>
+			   			<div class="pie_minor"></div>
 					</div>
 					<div id="G_Minor" class="hold_minor">
-			   		<div class="pie_minor"></div>
+			   			<div class="pie_minor"></div>
 					</div>
 					<div id="D_Minor" class="hold_minor">
-			   		<div class="pie_minor"></div>
+			   			<div class="pie_minor"></div>
 					</div>
 				</div>
 

@@ -30,6 +30,12 @@ jQuery(document).ready(function() {
 	//  Add .jtab to all <td> within #diatonic_chords div
 	jQuery('#diatonic_chords td').addClass('jtab');
 	
+	//  Display IE nag if on IE
+	if (navigator.appName == 'Microsoft Internet Explorer') {
+		jQuery('#ie_nag').css('display', 'block');
+		}
+	
+	
 	/*
 	//  Major Initialize Animation
 	jQuery('#C_Major .pie').addClass('selected_slice');
