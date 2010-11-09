@@ -96,7 +96,7 @@ h3 {
 #ie_nag {
 	background-color: #FCDFFF;
 	border: 1px solid red;
-	padding: 5px;
+	padding: 10px;
 }
 
 #enterchords {
@@ -173,11 +173,10 @@ a#clear_selected:hover {
 
 #ie_keys td {
 	border:1px solid #999999;
-	cursor:pointer;
 	font-size:14px;
 	line-height:23px;
 	margin:0;
-	padding:3px;
+	padding:12px;
 	text-align:center;
 	width:90px;
 }
@@ -663,7 +662,7 @@ a#clear_selected:hover {
 	left:237px;
 }
 
-#Csharp_Major-label {
+#Db_Major-label {
 	position:absolute;
 	top:430px;
 	left:135px;

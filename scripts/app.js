@@ -34,6 +34,12 @@ jQuery(document).ready(function() {
 	if (navigator.appName == 'Microsoft Internet Explorer') {
 		jQuery('#ie_nag').css('display', 'block');
 		}
-	
-	
+		
+	//  Don't circle of fifths if browser is not IE, otherwise display it.
+	if (navigator.appName != 'Microsoft Internet Explorer') {
+		jQuery('#circle_of_fifths').css('display', 'block');
+		}
+		else{
+		jQuery('#ie_results').css('display', 'block');
+		}
 });

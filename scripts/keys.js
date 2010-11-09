@@ -76,8 +76,11 @@ var Keys = {
 	//F# minor
 	'F# Minor': ['A', 'Amaj7', 'Bm', 'Bm7', 'C#m', 'C#m7', 'C#', 'C#7', 'D', 'Dmaj7', 'E', 'E7', 'F#m', 'F#m7', 'G#dim'],
 	
-	//C#/Db minor
+	//C# minor
 	'C# Minor': ['E', 'Emaj7', 'F#m', 'F#m7', 'G#m', 'G#m7', 'G#', 'G#7', 'A', 'Amaj7', 'B', 'B7', 'C#m', 'C#m7', 'D#dim'],
+	
+	//Db minor
+	'Db Minor': ['E', 'Emaj7', 'F#m', 'F#m7', 'G#m', 'G#m7', 'G#', 'G#7', 'A', 'Amaj7', 'B', 'B7', 'C#m', 'C#m7', 'D#dim'],
 	
 	//Ab minor
 	'Ab Minor': ['B', 'Bmaj7', 'C#m', 'C#m7', 'D#m', 'D#m7', 'D#', 'D#7', 'E', 'Emaj7', 'F#', 'F#7', 'G#m', 'G#m7', 'A#dim'],
@@ -129,28 +132,35 @@ function namethatkey() {
 	jQuery('#result').css('display', 'block');
 	// jQuery('#thekey').html("A song with chords: " + chords.join(", ") + " is most likely in the key of");
 	// document.getElementById('keyletter').innerHTML = topkeys.join("<br /><span class='or'>or</span><br /> ");
-
-	// if no chords are selected don't show the #result div
-	//if (jQuery('.selected').length == 0) {
-	//	jQuery('#result').hide();
-	//}
 	
 	// Circle of Fifth Highlighting
-	// Remove all selected_slice/selected_slice_minor/selected_key_text classes to reset
+	// Remove all selected_slice/selected_slice_minor/selected_key_text classes to reset circle and ie results table.
 	jQuery('.selected_slice').removeClass('selected_slice');
 	jQuery('.selected_slice_minor').removeClass('selected_slice_minor');
 	jQuery('.selected_key_text').removeClass('selected_key_text');
 
-	// Give the resulting Major ids .selected_slice
+	// Give the resulting Major ids .selected_slice in the CIRCLE OF FIFTHS.
 	_(topkeys).each(function(item,index) {
 		var id = item.replace(" ", "_").replace("#", "sharp");
 		jQuery('#'+id+' .pie').addClass('selected_slice');
 	});
 	
-	// Give the resulting Minor ids .selected_slice_minor
+	// Give the resulting Minor ids .selected_slice_minor in the CIRCLE OF FIFTHS.
 	_(topkeys).each(function(item,index) {
 		var id = item.replace(" ", "_").replace("#", "sharp");
 		jQuery('#'+id+' .pie_minor').addClass('selected_slice_minor');
+	});
+	
+	// Give the resulting Major ids .selected_slice in the IE RESULTS TABLE.
+	_(topkeys).each(function(item,index) {
+		var id = item.replace(" ", "_").replace("#", "sharp").replace('Major', "");
+		jQuery('#ie_'+id+'Major').addClass('selected_slice');
+	});
+	
+	// Give the resulting Minor ids .selected_slice_minor in the IE RESULTS TABLE.
+	_(topkeys).each(function(item,index) {
+		var id = item.replace(" ", "_").replace("#", "sharp").replace('Minor', "");
+		jQuery('#ie_'+id+'Minor').addClass('selected_slice_minor');
 	});
 	
 	// Highlight circle labels by adding .selected_key_text

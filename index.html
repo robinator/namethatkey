@@ -51,7 +51,7 @@
 			<p>Clicking any key in the circle of fifths will display all diatonic chords within that key as guitar chords for you string ticklers.</p>
 		</div>
 		<div id="ie_nag" style="display:none">
-			<p>Uh oh, looks like you're using Internet Explorer... Name That Key isn't supported on Internet Explorer.  Try Firefox instead:  <a href='http://www.mozilla.com/en-US/' target="_blank"><img src='http://sfx-images.mozilla.org/firefox/3.6/110x32_get_orange.png' /></a></p>
+			<p>Name That Key works in Internet Explorer, but is best viewed in Firefox: <a href='http://www.mozilla.com/en-US/' target="_blank" title="Download Firefox"><img src='http://sfx-images.mozilla.org/firefox/3.6/110x32_get_orange.png' /></a></p>
 		</div>
 		<div id="enterchords">
 			<h3>#1 Pick Chords to Find the Key</h3>
@@ -87,8 +87,7 @@
 			<p style="font-style:italic; font-size:15px;"><span class="underline">tip:</span> to see the chords within a key give it a click.</p>
 			<p id="thekey"></p>
 			<div id="keyletter"></div>
-			<div id="circle_of_fifths">
-
+			<div id="circle_of_fifths" style="display:none">
 				<!--Major Pie-->
 				<div id="major_pie">
 					<div id="C_Major" class="hold">
@@ -178,7 +177,7 @@
 					<div id="E_Major-label"><a href="diatonic_tabs.html?key=E">E</a></div>
 					<div id="B_Major-label"><a href="diatonic_tabs.html?key=B">B</a></div>
 					<div id="Fsharp_Major-label"><a href="diatonic_tabs.html?key=Fsharp">F#</a></div>
-					<div id="Csharp_Major-label"><a href="diatonic_tabs.html?key=Db">Db</a></div>
+					<div id="Db_Major-label"><a href="diatonic_tabs.html?key=Db">Db</a></div>
 					<div id="Ab_Major-label"><a href="diatonic_tabs.html?key=Ab">Ab</a></div>
 					<div id="Eb_Major-label"><a href="diatonic_tabs.html?key=Eb">Eb</a></div>
 					<div id="Bb_Major-label"><a href="diatonic_tabs.html?key=Bb">Bb</a></div>
@@ -199,24 +198,25 @@
 					<div id="F_Minor-label"><a href="diatonic_tabs.html?key=Fm">Fm</a></div>
 				</div>
 			</div>
-		</div>
-		<!--<div id="ie_results">
-		<table id="ie_keys">
+			<div id="ie_results" style="display:none;">
+				<table id="ie_keys">
 				<tr><th>Major</th><th>Minor</th></tr>
-				<tr><td><a href="diatonic_tabs.html?key=C">C</a></td><td><a href="diatonic_tabs.html?key=Am">Am</a></td></tr>
-				<tr><td><a href="diatonic_tabs.html?key=G">G</a></td><td><a href="diatonic_tabs.html?key=Em">Em</a></td></tr>
-				<tr><td><a href="diatonic_tabs.html?key=D">D</a></td><td><a href="diatonic_tabs.html?key=Bm">Bm</a></td></tr>
-				<tr><td><a href="diatonic_tabs.html?key=A">A</a></td><td><a href="diatonic_tabs.html?key=Fsharpm">F#m</a></td></tr>
-				<tr><td><a href="diatonic_tabs.html?key=E">E</a></td><td><a href="diatonic_tabs.html?key=Dbm">Dbm</a></td></tr>
-				<tr><td><a href="diatonic_tabs.html?key=B">B</a></td><td><a href="diatonic_tabs.html?key=Abm">Abm</a></td></tr>
-				<tr><td><a href="diatonic_tabs.html?key=Fsharp">F#</a></td><td><a href="diatonic_tabs.html?key=Ebm">Ebm</a></td></tr>
-				<tr><td><a href="diatonic_tabs.html?key=Db">Db</a></td><td><a href="diatonic_tabs.html?key=Bbm">Bbm</a></td></tr>
-				<tr><td><a href="diatonic_tabs.html?key=Ab">Ab</a></td><td><a href="diatonic_tabs.html?key=Fm">Fm</a></td></tr>
-				<tr><td><a href="diatonic_tabs.html?key=Eb">Eb</a></td><td><a href="diatonic_tabs.html?key=Cm">Cm</a></td></tr>
-				<tr><td><a href="diatonic_tabs.html?key=Bb">Bb</a></td><td><a href="diatonic_tabs.html?key=Gm">Gm</a></td></tr>
-				<tr><td><a href="diatonic_tabs.html?key=F">F</a></td><td><a href="diatonic_tabs.html?key=Dm">Dm</a></td></tr>
-			</table>
-		</div>-->
+				<tr><td id="ie_C_Major"><a href="diatonic_tabs.html?key=C">C</a></td><td id="ie_A_Minor"><a href="diatonic_tabs.html?key=Am">Am</a></td></tr>
+				<tr><td id="ie_G_Major"><a href="diatonic_tabs.html?key=G">G</a></td><td id="ie_E_Minor"><a href="diatonic_tabs.html?key=Em">Em</a></td></tr>
+				<tr><td id="ie_D_Major"><a href="diatonic_tabs.html?key=D">D</a></td><td id="ie_B_Minor"><a href="diatonic_tabs.html?key=Bm">Bm</a></td></tr>
+				<tr><td id="ie_A_Major"><a href="diatonic_tabs.html?key=A">A</a></td><td id="ie_Fsharp_Minor"><a href="diatonic_tabs.html?key=Fsharpm">F#m</a></td></tr>
+				<tr><td id="ie_E_Major"><a href="diatonic_tabs.html?key=E">E</a></td><td id="ie_Db_Minor"><a href="diatonic_tabs.html?key=Dbm">Dbm</a></td></tr>
+				<tr><td id="ie_B_Major"><a href="diatonic_tabs.html?key=B">B</a></td><td id="ie_Ab_Minor"><a href="diatonic_tabs.html?key=Abm">Abm</a></td></tr>
+				<tr><td id="ie_Fsharp_Major"><a href="diatonic_tabs.html?key=Fsharp">F#</a></td><td id="ie_Eb_Minor"><a href="diatonic_tabs.html?key=Ebm">Ebm</a></td></tr>
+				<tr><td id="ie_Db_Major"><a href="diatonic_tabs.html?key=Db">Db</a></td><td id="ie_Bb_Minor"><a href="diatonic_tabs.html?key=Bbm">Bbm</a></td></tr>
+				<tr><td id="ie_Ab_Major"><a href="diatonic_tabs.html?key=Ab">Ab</a></td><td id="ie_F_Minor"><a href="diatonic_tabs.html?key=Fm">Fm</a></td></tr>
+				<tr><td id="ie_Eb_Major"><a href="diatonic_tabs.html?key=Eb">Eb</a></td><td id="ie_C_Minor"><a href="diatonic_tabs.html?key=Cm">Cm</a></td></tr>
+				<tr><td id="ie_Bb_Major"><a href="diatonic_tabs.html?key=Bb">Bb</a></td><td id="ie_G_Minor"><a href="diatonic_tabs.html?key=Gm">Gm</a></td></tr>
+				<tr><td id="ie_F_Major"><a href="diatonic_tabs.html?key=F">F</a></td><td id="ie_D_Minor"><a href="diatonic_tabs.html?key=Dm">Dm</a></td></tr>
+				</table>
+			</div>
+		</div>
+		
 		<div id="footer">
 			<p>&copy; 2010 
 				<a href="http://www.grimmdude.com/">Garrett Grimm</a>,
