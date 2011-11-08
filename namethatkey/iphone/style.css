@@ -12,11 +12,6 @@ img {
 	border:none;
 }
 
-.small {
-	font-size:12px;
-	font-family:helvetica,arial;
-}
-
 #wrapper {
 	position:relative;
 	width:100%;
@@ -31,95 +26,44 @@ a:hover {
 	color:#888888;
 }
 
-ul#nav {
-	margin-bottom:15px;
-	height:17px;
-	width:100%;
-	border-bottom:1px solid #ccc;
-}
-
-ul#nav li {
-	float:left;
-	list-style:none;
-	margin-right: 20px;
-}
-
-ul#nav li a {
-	background-color:gray;
-	padding:5px 5px 0px 5px;
-	color:#ffffff;
-	text-decoration:none;
-}
-
-ul#nav li a:hover, ul#nav li.current_page a {
-	background-color:green;
-}
-
 #header {
 	width:100%;
 	height: 60px;
 	padding:8px;
-	margin: 0px 0px 20px 0px;
+	margin: 0px 0px 0px 0px;
 	border: none;
-	position:relative;
 }
 
 #header h1 {
 	color:green;
 	font-family: Zitti;
-	font-size:50px;
-	margin:0px 0px -15px 0px;
+	font-size:40px;
+	margin:3px;
 }
-
-.goodclef_logo {
-	position:absolute;
-	left:378px;
-	top:17px;
-}
-
-.back_to_goodclef a {
-	font-size:15px;
-	border:1px solid #999999;
-	padding:6px;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	color:#fff;
-	background-color:green;
-}
-
 h3 {
 	color:#264a6f;
-	border-left:14px solid #A6BCCD;
-	padding-left:5px;
-}
-
-.underline {
-	text-decoration:underline;
 }
 
 #toggle_instr {
-	position:absolute;
-	left:490px;
-	top:-2px;
-	background-color:#264A6F;
-	line-height:2;
-	margin:2px;
-	width:80px;
-	height:30px;
-	text-align:center;
-	cursor:pointer;
-	color:white;
-	-moz-box-shadow: 2px 2px 10px #000;
-	-webkit-box-shadow: 2px 2px 10px #000;
-	box-shadow: 2px 2px 10px #000;
+
 }
 
-#toggle_instr:hover {
-	margin-left:4px;
-	-moz-box-shadow: 0px 0px 0px #000;
-	-webkit-box-shadow: 0px 0px 0px #000;
-	box-shadow: 0px 0px 0px #000;
-	
+#toggle_instr a {
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	background-color:#264A6F;
+	border:2px solid #777777;
+	color:#FFFFFF;
+	line-height:2;
+	margin:2px;
+	padding:3px 5px;
+	text-align:center;
+	width:80px;
+}
+
+a#toggle_instr:hover {
+	border-color:#EEEEEE;
+	border-width:2px;
 }
 
 #social {
@@ -132,30 +76,20 @@ h3 {
 	background-color:#A6BCCD;
 	display:none;
 	line-height:22px;
-	margin:5px 0px 0px 0px;
 	padding:8px;
 	width:100%;
-	border-top:1px solid #3399FF;
-	border-bottom:1px solid #3399FF;
-}
-
-#ie_nag {
-	background-color: #FCDFFF;
-	border: 1px solid red;
-	padding: 10px;
-	padding: 5px;
 }
 
 #enterchords {
 	background-color:#FFFFFF;
 	float:left;
-	height:765px;
+	height:830px;
 	padding:0px;
 	margin-left:10px;
 	width:48%;
 }
 .odd td {
-	background-color:#D4D8B0;
+	background-color: #eee;
 }
 #chord_selector td {
 	-moz-border-radius:10px;
@@ -165,7 +99,7 @@ h3 {
 	font-size:14px;
 	line-height:23px;
 	margin:0;
-	padding:3px;
+	padding:4px;
 	text-align:center;
 	width:90px;
 }
@@ -195,6 +129,7 @@ a#clear_selected {
 	text-align:center;
 	line-height:1;
 	display:block;
+	width:606px;
 }
 
 a#clear_selected:hover {
@@ -211,20 +146,6 @@ a#clear_selected:hover {
 	padding:5px;
 	position:relative;
 	width:49%;
-}
-
-#ie_keys {
-	border-collapse:collapse;
-}
-
-#ie_keys td {
-	border:1px solid #999999;
-	font-size:14px;
-	line-height:23px;
-	margin:0;
-	padding:12px;
-	text-align:center;
-	width:90px;
 }
 
 #keyletter {
@@ -669,7 +590,7 @@ a#clear_selected:hover {
 #C_Major-label {
 	position:absolute;
 	top:25px;
-	left:237px;
+	left:240px;
 }
 
 #G_Major-label {
@@ -705,10 +626,10 @@ a#clear_selected:hover {
 #Fsharp_Major-label {
 	position:absolute;
 	top:455px;
-	left:237px;
+	left:243px;
 }
 
-#Db_Major-label {
+#Csharp_Major-label {
 	position:absolute;
 	top:430px;
 	left:135px;
@@ -759,8 +680,8 @@ a#clear_selected:hover {
 
 #A_Minor-label {
 	position:absolute;
-	top:70px;
-	left:231px;
+	top:80px;
+	left:234px;
 }
 
 #E_Minor-label {
@@ -796,7 +717,7 @@ a#clear_selected:hover {
 #Eb_Minor-label {
 	position:absolute;
 	top:405px;
-	left:226px;
+	left:233px;
 }
 
 #Bb_Minor-label {
@@ -811,20 +732,6 @@ a#clear_selected:hover {
 	left:97px;
 }
 
-/* key label stylings */
-#key_labels a {
-	padding:5px;
-	border:none;
-}
-	
-#key_labels a:hover {
-	background-color:pink;
-	color:black;
-	padding:5px;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	}
-
 /* The selected slices */
 .selected_slice {
 	background-color:#CAE1A5 !important;
@@ -835,18 +742,5 @@ a#clear_selected:hover {
 }
 
 .selected_key_text {
-	color:black;
+	color:#FFFFFF;
 }
-
-/* jTab stuff */
-
-.jtab {
-  height:218px;
-}
-.jtab.chordonly {
-  height:118px;
-}
-.jtab.tabonly {
-  height:100px;
-}
-
