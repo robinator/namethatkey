@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Diatonic Chords In This Key (guitar)</title>
+	<meta charset="utf-8" />
+	<meta name="copyright" content="Garrett Grimm &amp; Rob Law, 2010" />
+	<meta name="keywords" content="find a song key by chords, figure out a keys, music, chords, guitar, piano, find key online tool" />
+	<meta name="author" content="Garrett Grimm &amp; Rob Law August 17, 2010" />
+	<link rel="shortcut icon" href="../favicon.ico" />
+
+	<link href="style.css" media="all" rel="stylesheet" type="text/css"/>
+	<script src="scripts/underscore.min.js" type="text/javascript"></script>
+	<script src="scripts/jquery.min.js" type="text/javascript"></script>
+	<script src="scripts/keys.js" type="text/javascript"></script>
+	<script src="scripts/app.js" type="text/javascript"></script>
+	
+	<!-- jquery url plugin http://ajaxcssblog.com/jquery/url-read-get-variables/jquery/url-read-request-variables/ -->
+	<script src="scripts/jquery.url.min.js" type="text/javascript"></script>
+
+	<!-- JTAB recommended to avoid security warnings with SVG in IE8 -->
+ 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /> 
+    
+  	<!-- JTAB mandatory script includes for jtab -->
+  	<script src="scripts/jtab/prototype.js" type="text/javascript"></script>
+  	<script src="scripts/jtab/raphael.js" type="text/javascript"></script>
+ 	<script src="scripts/jtab/jtab.js" type="text/javascript"></script>
+</head>
+<body style="background-color:white;">
+	<div id="diatonic_chords">	
+			<script type="text/javascript">
+				// jQuery url plugin gets variable from url
+				var key = jQuery.url.param('key');	
+			
+				//  Write the header and table tag
+				document.write('<h3>Diatonic Chords In '+key+'<\/h3>');
+				document.write('<table>');
+  				
+ 				//  Major Key Tabs
+ 				var C = '<tr><td>C<\/td><td>Dm<\/td><td>Em<\/td><td>F<\/td><td>G<\/td><td>Am<\/td><td>Bdim<\/td><\/tr>';
+ 				var G = '<tr><td>G<\/td><td>Am<\/td><td>Bm<\/td><td>C<\/td><td>D<\/td><td>Em<\/td><td>F#dim<\/td><\/tr>';
+ 				var D = '<tr><td>D<\/td><td>Em<\/td><td>F#m<\/td><td>G<\/td><td>A<\/td><td>Bm<\/td><td>C#dim<\/td><\/tr>';
+ 				var A = '<tr><td>A<\/td><td>Bm<\/td><td>C#m<\/td><td>D<\/td><td>E<\/td><td>F#m<\/td><td>G#dim<\/td><\/tr>';
+ 				var E = '<tr><td>E<\/td><td>F#m<\/td><td>G#m<\/td><td>A<\/td><td>B<\/td><td>C#m<\/td><td>D#dim<\/td><\/tr>';
+ 				var B = '<tr><td>B<\/td><td>C#m<\/td><td>D#m<\/td><td>E<\/td><td>F#<\/td><td>G#m<\/td><td>A#dim<\/td><\/tr>';
+ 				var Fsharp = '<tr><td>F#<\/td><td>G#m<\/td><td>A#m<\/td><td>B<\/td><td>C#<\/td><td>D#m<\/td><td>E#dim<\/td><\/tr>';
+ 				var Db = '<tr><td>Db<\/td><td>Ebm<\/td><td>Fm<\/td><td>Gb<\/td><td>Ab<\/td><td>Bbm<\/td><td>Cdim<\/td><\/tr>';
+ 				var Ab = '<tr><td>Ab<\/td><td>Bbm<\/td><td>Cm<\/td><td>Db<\/td><td>Eb<\/td><td>Fm<\/td><td>Gdim<\/td><\/tr>';
+ 				var Eb = '<tr><td>Eb<\/td><td>Fm<\/td><td>Gm<\/td><td>Ab<\/td><td>Bb<\/td><td>Cm<\/td><td>Ddim<\/td><\/tr>';
+ 				var Bb = '<tr><td>Bb<\/td><td>Cm<\/td><td>Dm<\/td><td>Eb<\/td><td>F<\/td><td>Gm<\/td><td>Adim<\/td><\/tr>';
+ 				var F = '<tr><td>F<\/td><td>Gm<\/td><td>Am<\/td><td>Bb<\/td><td>C<\/td><td>Dm<\/td><td>Edim<\/td><\/tr>';
+ 				
+ 				//	Minor Key Tabs
+ 				var Cm = '<tr><td>Cm<\/td><td>Ddim<\/td><td>Eb<\/td><td>Fm<\/td><td>Gm<\/td><td>Ab<\/td><td>Bb<\/td><\/tr>';
+ 				var Gm = '<tr><td>Gm<\/td><td>Adim<\/td><td>Bb<\/td><td>Cm<\/td><td>Dm<\/td><td>Eb<\/td><td>F<\/td><\/tr>';
+ 				var Dm = '<tr><td>Dm<\/td><td>Edim<\/td><td>F<\/td><td>Gm<\/td><td>Am<\/td><td>Bb<\/td><td>C<\/td><\/tr>';
+ 				var Am = '<tr><td>Am<\/td><td>Bdim<\/td><td>C<\/td><td>Dm<\/td><td>Em<\/td><td>F<\/td><td>G<\/td><\/tr>';
+ 				var Em = '<tr><td>Em<\/td><td>F#dim<\/td><td>G<\/td><td>Am<\/td><td>Bm<\/td><td>C<\/td><td>D<\/td><\/tr>';
+ 				var Bm = '<tr><td>Bm<\/td><td>C#dim<\/td><td>D<\/td><td>Em<\/td><td>F#m<\/td><td>G<\/td><td>A<\/td><\/tr>';
+ 				var Fsharpm = '<tr><td>F#m<\/td><td>G#dim<\/td><td>A<\/td><td>Bm<\/td><td>C#m<\/td><td>D<\/td><td>E<\/td><\/tr>';
+ 				var Dbm = '<tr><td>Dbm<\/td><td>Ebdim<\/td><td>Fb<\/td><td>Gbm<\/td><td>Abm<\/td><td>Bbb<\/td><td>Cb<\/td><\/tr>';
+ 				var Abm = '<tr><td>Abm<\/td><td>Bbdim<\/td><td>Cb<\/td><td>Dbm<\/td><td>Ebm<\/td><td>Fb<\/td><td>Gb<\/td><\/tr>';
+ 				var Ebm = '<tr><td>Ebm<\/td><td>Fdim<\/td><td>Gb<\/td><td>Abm<\/td><td>Bbm<\/td><td>Cb<\/td><td>Db<\/td><\/tr>';
+ 				var Bbm = '<tr><td>Bbm<\/td><td>Cdim<\/td><td>Db<\/td><td>Ebm<\/td><td>Fm<\/td><td>Gb<\/td><td>A<\/td><\/tr>';
+ 				var Fm = '<tr><td>Fm<\/td><td>Gdim<\/td><td>Ab<\/td><td>Bbm<\/td><td>Cm<\/td><td>Db<\/td><td>E<\/td><\/tr>';
+ 	
+ 				//	If key is major show major numberals, else show minor numerals
+  				if (key=='C'| key=='G' | key=='D'| key=='A'| key=='E'| key=='B'| key=='Fsharp'| key=='Db'| key=='Ab'| key=='Eb'| key=='Bb' | key=='F'){
+  					document.write('<tr><th>I<\/th><th>ii<\/th><th>iii<\/th><th>IV<\/th><th>V<\/th><th>vi<\/th><th>vii &deg;<\/th><\/tr>');
+  					}
+  					
+  					else {
+  					document.write('<tr><th>i<\/th><th>ii &deg;<\/th><th>III<\/th><th>iv<\/th><th>v<\/th><th>VI<\/th><th>VII<\/th><\/tr>');
+  					}
+  				
+  				//  only show tabs for clicked key
+  				//	Majors
+				if (key=='C') {
+					document.write(C);}
+					
+				else if(key=='G') {
+					document.write(G);}
+					
+				else if(key=='D') {
+					document.write(D);}
+					
+				else if(key=='A') {
+					document.write(A);}
+					
+				else if(key=='E') {
+					document.write(E);}
+					
+				else if(key=='B') {
+					document.write(B);}
+					
+				else if(key=='Fsharp') {
+					document.write(Fsharp);}
+					
+				else if(key=='Db') {
+					document.write(Db);}
+					
+				else if(key=='Ab') {
+					document.write(Ab);}
+					
+				else if(key=='Eb') {
+					document.write(Eb);}
+					
+				else if(key=='Bb') {
+					document.write(Bb);}
+					
+				else if(key=='F') {
+					document.write(F);}
+					
+				//  Minors
+				if (key=='Cm') {
+					document.write(Cm);}
+					
+				else if(key=='Gm') {
+					document.write(Gm);}
+					
+				else if(key=='Dm') {
+					document.write(Dm);}
+					
+				else if(key=='Am') {
+					document.write(Am);}
+					
+				else if(key=='Em') {
+					document.write(Em);}
+					
+				else if(key=='Bm') {
+					document.write(Bm);}
+					
+				else if(key=='Fsharpm') {
+					document.write(Fsharpm);}
+					
+				else if(key=='Dbm') {
+					document.write(Dbm);}
+					
+				else if(key=='Abm') {
+					document.write(Abm);}
+					
+				else if(key=='Ebm') {
+					document.write(Ebm);}
+					
+				else if(key=='Bbm') {
+					document.write(Bbm);}
+					
+				else if(key=='Fm') {
+					document.write(Fm);}
+					
+  			</script>		
+		</table>
+	</div>
+</body>
+</html>
