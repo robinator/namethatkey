@@ -139,27 +139,35 @@ function namethatkey() {
 	jQuery('.selected_slice_minor').removeClass('selected_slice_minor');
 	jQuery('.selected_key_text').removeClass('selected_key_text');
 
+	// Give the resulting Major ids .selected_slice in the CIRCLE OF FIFTHS.
 	_(topkeys).each(function(item,index) {
-		// Give the resulting Major ids .selected_slice in the CIRCLE OF FIFTHS.
-		var id_major = item.replace(" ", "_").replace("#", "sharp");
-		jQuery('#'+id_major+' .pie').addClass('selected_slice');
-		
-		// Give the resulting Minor ids .selected_slice_minor in the CIRCLE OF FIFTHS.
-		var id_minor = item.replace(" ", "_").replace("#", "sharp");
-		jQuery('#'+id_minor+' .pie_minor').addClass('selected_slice_minor');
-		
-		// Give the resulting Major ids .selected_slice in the IE RESULTS TABLE.
-		var id_ie_major = item.replace(" ", "_").replace("#", "sharp").replace('Major', "");
-		jQuery('#ie_'+id_ie_major+'Major').addClass('selected_slice');
-		
-		// Give the resulting Minor ids .selected_slice_minor in the IE RESULTS TABLE.
-		var id_ie_minor = item.replace(" ", "_").replace("#", "sharp").replace('Minor', "");
-		jQuery('#ie_'+id_ie_minor+'Minor').addClass('selected_slice_minor');
-		
-		// Highlight circle labels by adding .selected_key_text
-		var id_selected_text = item.replace(" ", "_").replace("#", "sharp");
-		id_selected_text += '-label';
-		jQuery('#'+id_selected_text).addClass('selected_key_text');
+		var id = item.replace(" ", "_").replace("#", "sharp");
+		jQuery('#'+id+' .pie').addClass('selected_slice');
+	});
+	
+	// Give the resulting Minor ids .selected_slice_minor in the CIRCLE OF FIFTHS.
+	_(topkeys).each(function(item,index) {
+		var id = item.replace(" ", "_").replace("#", "sharp");
+		jQuery('#'+id+' .pie_minor').addClass('selected_slice_minor');
+	});
+	
+	// Give the resulting Major ids .selected_slice in the IE RESULTS TABLE.
+	_(topkeys).each(function(item,index) {
+		var id = item.replace(" ", "_").replace("#", "sharp").replace('Major', "");
+		jQuery('#ie_'+id+'Major').addClass('selected_slice');
+	});
+	
+	// Give the resulting Minor ids .selected_slice_minor in the IE RESULTS TABLE.
+	_(topkeys).each(function(item,index) {
+		var id = item.replace(" ", "_").replace("#", "sharp").replace('Minor', "");
+		jQuery('#ie_'+id+'Minor').addClass('selected_slice_minor');
+	});
+	
+	// Highlight circle labels by adding .selected_key_text
+	_(topkeys).each(function(item,index) {
+		var id = item.replace(" ", "_").replace("#", "sharp");
+		id += '-label';
+		jQuery('#'+id).addClass('selected_key_text');
 	});
 	
 	// Remove all selected_slice/selected_slice_minor/selected_key_text classes if nothing is selected
